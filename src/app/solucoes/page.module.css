@@ -1,0 +1,229 @@
+.main {
+  background-color: var(--white);
+}
+
+.solutionsHero {
+  padding: 140px 0 100px;
+  background: linear-gradient(135deg, var(--dark) 0%, var(--dark-2) 100%);
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+}
+
+.solutionsHero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: radial-gradient(circle at 50% 50%, var(--primary-glow) 0%, transparent 70%);
+  z-index: 0;
+}
+
+.label {
+  display: inline-block;
+  padding: 6px 16px;
+  background: rgba(91, 99, 211, 0.1);
+  color: var(--primary);
+  border-radius: var(--radius-pill);
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 24px;
+  position: relative;
+  z-index: 1;
+}
+
+.heroLabel {
+  background: rgba(255, 255, 255, 0.1);
+  color: #fff;
+  opacity: 0.9;
+}
+
+.solutionsHeroTitle {
+  font-size: clamp(32px, 5vw, 56px);
+  color: #fff;
+  max-width: 900px;
+  margin: 0 auto 24px;
+  position: relative;
+  z-index: 1;
+  line-height: 1.1;
+}
+
+.solutionsHeroSub {
+  font-size: clamp(16px, 1.5vw, 20px);
+  color: rgba(255, 255, 255, 0.7);
+  max-width: 700px;
+  margin: 0 auto 40px;
+  position: relative;
+  z-index: 1;
+}
+
+.solutionsBadges {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  position: relative;
+  z-index: 1;
+}
+
+.solutionsBadge {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: rgba(255, 255, 255, 0.9);
+  padding: 8px 20px;
+  border-radius: var(--radius-pill);
+  font-size: 14px;
+  backdrop-filter: blur(4px);
+}
+
+.section {
+  padding: var(--section-padding);
+}
+
+.solutionsGrid {
+  display: flex;
+  flex-direction: column;
+  gap: 120px;
+}
+
+.solutionRow {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 80px;
+}
+
+.solutionRow.reversed {
+  direction: rtl;
+}
+
+.solutionRow.reversed .solutionBody {
+  direction: ltr; /* Reset text direction for body */
+}
+
+.solutionVisual {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  background: var(--gray-light);
+  border-radius: var(--radius-card);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 100px;
+  overflow: hidden;
+  box-shadow: var(--shadow-md);
+}
+
+.solutionVisualGrad {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, var(--primary-light) 0%, var(--primary) 100%);
+  opacity: 0.05;
+}
+
+.solutionBody {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.solutionBody h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  color: var(--text-primary);
+}
+
+.solutionBody p {
+  font-size: 18px;
+  line-height: 1.7;
+  color: var(--text-body);
+  margin-bottom: 32px;
+}
+
+.solutionFeatures {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+  margin-bottom: 40px;
+}
+
+.solutionFeature {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 16px;
+  color: var(--text-body);
+}
+
+.solutionFeatureCheck {
+  width: 24px;
+  height: 24px;
+  background: var(--accent-green-bg);
+  color: var(--accent-green);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  font-weight: bold;
+  flex-shrink: 0;
+}
+
+.solutionLink {
+  display: inline-flex;
+  align-items: center;
+  padding: 14px 28px;
+  background: var(--primary);
+  color: #fff;
+  border-radius: var(--radius-pill);
+  font-weight: 600;
+  font-size: 16px;
+  transition: all 0.3s ease;
+  box-shadow: var(--shadow-primary);
+}
+
+.solutionLink:hover {
+  transform: translateY(-2px);
+  background: var(--primary-dark);
+  box-shadow: 0 6px 30px rgba(91, 99, 211, 0.4);
+}
+
+@media (max-width: 1024px) {
+  .solutionRow {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    text-align: center;
+  }
+  
+  .solutionRow.reversed {
+    direction: ltr;
+  }
+  
+  .solutionBody {
+    align-items: center;
+  }
+  
+  .solutionGrid {
+    gap: 80px;
+  }
+}
+
+@media (max-width: 768px) {
+  .solutionsHero {
+    padding: 100px 0 60px;
+  }
+  
+  .solutionBody h2 {
+    font-size: 28px;
+  }
+  
+  .solutionVisual {
+    font-size: 60px;
+  }
+}

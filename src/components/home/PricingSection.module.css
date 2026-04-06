@@ -1,0 +1,223 @@
+.section {
+  padding: var(--section-padding);
+  background: var(--white);
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.label {
+  display: inline-block;
+  padding: 6px 16px;
+  background: var(--primary-glow);
+  color: var(--primary);
+  border-radius: var(--radius-pill);
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+}
+
+.title {
+  font-size: clamp(28px, 3.5vw, 48px);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  margin-bottom: 12px;
+}
+
+.subtitle {
+  font-size: 16px;
+  color: var(--text-body);
+}
+
+/* Toggle */
+.toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 0;
+  background: var(--gray-light);
+  border-radius: var(--radius-pill);
+  padding: 4px;
+  margin-bottom: 52px;
+}
+
+.toggleBtn {
+  padding: 10px 24px;
+  border-radius: var(--radius-pill);
+  font-size: 14px;
+  font-weight: 600;
+  border: none;
+  background: transparent;
+  color: var(--text-muted);
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+}
+
+.toggleBtn.active {
+  background: var(--dark-2);
+  color: white;
+}
+
+.toggleBadge {
+  padding: 10px 20px;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--primary);
+}
+
+/* Cards grid */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  align-items: start;
+}
+
+.card {
+  border: 1px solid var(--gray-mid);
+  border-radius: var(--radius-card);
+  padding: 36px 32px;
+  background: var(--white);
+  box-shadow: var(--shadow-sm);
+  transition: transform 0.25s, box-shadow 0.25s;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-lg);
+}
+
+.card.popular {
+  background: linear-gradient(160deg, #5259D0 0%, #7B82E0 100%);
+  border-color: transparent;
+  color: white;
+  box-shadow: 0 8px 40px rgba(91,99,211,0.35);
+}
+
+.popularBadge {
+  display: inline-block;
+  padding: 4px 12px;
+  background: rgba(255,255,255,0.2);
+  color: white;
+  border-radius: var(--radius-pill);
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.planName {
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--text-body);
+}
+
+.card.popular .planName { color: rgba(255,255,255,0.8); }
+
+.price {
+  display: flex;
+  align-items: baseline;
+  gap: 4px;
+}
+
+.priceValue {
+  font-size: 48px;
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  color: var(--text-primary);
+  line-height: 1;
+}
+
+.card.popular .priceValue { color: white; }
+
+.pricePeriod {
+  font-size: 14px;
+  color: var(--text-muted);
+  font-weight: 500;
+}
+
+.card.popular .pricePeriod { color: rgba(255,255,255,0.7); }
+
+.planDesc {
+  font-size: 14px;
+  color: var(--text-body);
+  line-height: 1.6;
+}
+
+.card.popular .planDesc { color: rgba(255,255,255,0.75); }
+
+.ctaBtn {
+  display: block;
+  padding: 14px;
+  border-radius: var(--radius-pill);
+  font-size: 15px;
+  font-weight: 700;
+  text-align: center;
+  text-decoration: none;
+  transition: transform 0.2s, box-shadow 0.2s;
+  cursor: pointer;
+}
+
+.ctaBtn.dark {
+  background: var(--dark-2);
+  color: white;
+}
+
+.ctaBtn.dark:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 16px rgba(0,0,0,0.2);
+}
+
+.ctaBtn.white {
+  background: white;
+  color: var(--primary);
+}
+
+.ctaBtn.white:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+}
+
+/* Features list */
+.featureList {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 4px;
+}
+
+.featureItem {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  font-size: 14px;
+  color: var(--text-body);
+}
+
+.card.popular .featureItem { color: rgba(255,255,255,0.85); }
+
+.checkIcon {
+  color: var(--primary);
+  font-weight: 700;
+  flex-shrink: 0;
+  line-height: 1.4;
+}
+
+.card.popular .checkIcon { color: rgba(255,255,255,0.9); }
+
+.featuresLabel {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--text-muted);
+  margin-top: 4px;
+}
+
+.card.popular .featuresLabel { color: rgba(255,255,255,0.5); }
+
+@media (max-width: 900px) {
+  .grid { grid-template-columns: 1fr; max-width: 480px; margin: 0 auto; }
+}

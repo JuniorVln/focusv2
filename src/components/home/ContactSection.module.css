@@ -1,0 +1,224 @@
+.section {
+  padding: 60px 0;
+  background: #f8fafc;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Fundo com efeito de ondas/vídeo sutil */
+.backgroundVideo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle at 50% 50%, #ffffff 0%, #f1f5f9 100%);
+  z-index: 0;
+}
+
+.backgroundWaves {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1600 800'%3E%3Cpath fill='%23e2e8f0' opacity='0.4' d='M-100 200 Q400 100 800 200 T1700 200 V800 H-100 Z'/%3E%3C/svg%3E");
+  background-size: cover;
+  animation: waveMove 20s infinite linear;
+  opacity: 0.5;
+}
+
+@keyframes waveMove {
+  from { background-position: 0 0; }
+  to { background-position: 1600px 0; }
+}
+
+.container {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  max-width: 1000px;
+  padding: 0 20px;
+}
+
+.darkBox {
+  background-color: #1e293b; /* Slate 800 */
+  border-radius: 32px;
+  padding: 50px 30px;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+  color: white;
+  box-shadow: 0 20px 40px -10px rgba(0, 0, 0, 0.25);
+}
+
+/* Pattern de pixels nos cantos */
+.darkBox::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 160px;
+  height: 160px;
+  background-image: radial-gradient(rgba(255, 255, 255, 0.08) 1px, transparent 1px);
+  background-size: 16px 16px;
+  mask-image: radial-gradient(circle at 0 0, black, transparent 70%);
+}
+
+.darkBox::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 160px;
+  height: 160px;
+  background-image: radial-gradient(rgba(255, 255, 255, 0.08) 1px, transparent 1px);
+  background-size: 16px 16px;
+  mask-image: radial-gradient(circle at 100% 100%, black, transparent 70%);
+}
+
+.inner {
+  position: relative;
+  z-index: 2;
+  max-width: 760px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.badge {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.7);
+  margin-bottom: 16px;
+}
+
+.title {
+  font-size: clamp(28px, 4.5vw, 48px);
+  font-weight: 700;
+  margin-bottom: 24px;
+  letter-spacing: -0.02em;
+  color: white;
+  line-height: 1.1;
+}
+
+.quote {
+  font-size: 16px;
+  line-height: 1.5;
+  color: rgba(255, 255, 255, 0.7);
+  margin-bottom: 32px;
+  font-style: italic;
+}
+
+/* Autor */
+.author {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 32px;
+  text-align: left;
+}
+
+.avatar {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid rgba(255, 255, 255, 0.1);
+}
+
+.authorInfo h4 {
+  font-size: 15px;
+  font-weight: 700;
+  margin: 0;
+  color: white;
+}
+
+.authorInfo p {
+  font-size: 12px;
+  margin: 0;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+/* Botões */
+.actions {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.btnGroup {
+  display: flex;
+  align-items: center;
+}
+
+.btnPrimary {
+  background: #4f46e5;
+  color: white;
+  padding: 12px 24px;
+  border-radius: 20px 0 0 20px;
+  font-weight: 700;
+  text-decoration: none;
+  font-size: 15px;
+  transition: background 0.2s;
+}
+
+.btnIconBox {
+  background: #6366f1;
+  padding: 12px 14px;
+  border-radius: 0 20px 20px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 18px;
+}
+
+.btnPrimary:hover {
+  background: #4338ca;
+}
+
+.btnSecondary {
+  background: rgba(255, 255, 255, 0.08);
+  color: white;
+  padding: 12px 24px;
+  border-radius: 20px;
+  font-weight: 600;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 15px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: background 0.2s;
+}
+
+.btnSecondary:hover {
+  background: rgba(255, 255, 255, 0.15);
+}
+
+@media (max-width: 640px) {
+  .darkBox {
+    padding: 40px 20px;
+  }
+  .actions {
+    flex-direction: column;
+    width: 100%;
+  }
+  .btnGroup, .btnSecondary {
+    width: 100%;
+    justify-content: center;
+  }
+  .btnPrimary {
+    flex: 1;
+  }
+}

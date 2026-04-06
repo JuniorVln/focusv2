@@ -1,0 +1,185 @@
+.section {
+  padding: 120px 0;
+  background: #f8fafc;
+  overflow: hidden;
+}
+
+.header {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto 64px;
+}
+
+.badgeWrap {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.badgeText {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: #5B63D3;
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.badgeIcon {
+  font-size: 18px;
+}
+
+.mainTitle {
+  font-size: 48px;
+  font-weight: 800;
+  color: #0F172A;
+  line-height: 1.1;
+  margin-bottom: 24px;
+  letter-spacing: -0.02em;
+}
+
+.mainDesc {
+  font-size: 18px;
+  color: #64748B;
+  line-height: 1.6;
+}
+
+/* Bento Grid */
+.bentoGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 400px);
+  gap: 24px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.card {
+  background: white;
+  border-radius: 24px;
+  border: 1px solid #E2E8F0;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+  position: relative;
+  overflow: hidden;
+  padding: 48px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Tall Image Card */
+.tallImageCard {
+  grid-column: 1;
+  grid-row: 1 / span 2;
+  padding: 0;
+  background: #0f172a;
+}
+
+.wavyImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.8;
+}
+
+/* Wide Satisfaction Card */
+.wideCard {
+  grid-column: 2 / span 2;
+  justify-content: space-between;
+}
+
+/* Efficiency Card (Purple) */
+.efficiencyCard {
+  grid-column: 4;
+  background: linear-gradient(135deg, #6366f1 0%, #4338ca 100%);
+  border: none;
+  color: white;
+}
+
+.efficiencyCard .statDesc {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.upArrow {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 140px;
+  height: 140px;
+  opacity: 0.1;
+}
+
+/* Launches Card */
+.launchesCard {
+  grid-column: 2;
+}
+
+/* Partners Card (Dark) */
+.partnersCard {
+  grid-column: 3 / span 2;
+  background: #1e293b;
+  border: none;
+  color: white;
+}
+
+.partnersCard .statDesc {
+  color: #94a3b8;
+}
+
+.logoRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  margin-bottom: auto;
+  padding-top: 20px;
+}
+
+.partnerLogo {
+  height: 24px;
+  opacity: 0.5;
+  filter: grayscale(1) brightness(2);
+}
+
+/* Stat Typography */
+.statNum {
+  font-size: 64px;
+  font-weight: 800;
+  line-height: 1;
+  margin-bottom: 8px;
+  letter-spacing: -0.04em;
+  color: inherit;
+}
+
+.statLabel {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: auto;
+  color: inherit;
+}
+
+.statDesc {
+  font-size: 15px;
+  line-height: 1.5;
+  color: #64748B;
+  margin-top: 32px;
+}
+
+@media (max-width: 1024px) {
+  .bentoGrid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+  }
+  .tallImageCard { display: none; }
+  .wideCard, .partnersCard { grid-column: span 2; }
+  .card { padding: 32px; min-height: 300px; }
+}
+
+@media (max-width: 640px) {
+  .bentoGrid {
+    grid-template-columns: 1fr;
+  }
+  .wideCard, .partnersCard, .launchesCard, .efficiencyCard { grid-column: span 1; }
+  .mainTitle { font-size: 32px; }
+}

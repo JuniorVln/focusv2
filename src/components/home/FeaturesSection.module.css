@@ -1,0 +1,374 @@
+.section {
+  padding: 120px 0;
+  background: #f8fafc; /* Light background for glassmorphism contrast */
+}
+
+.header {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 24px;
+  margin-bottom: 64px;
+}
+
+.badgeWrap {
+  grid-column: 1;
+}
+
+.badgeText {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: #5B63D3;
+  font-size: 15px;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+}
+
+.badgeIcon {
+  font-size: 16px;
+}
+
+.mainTitle {
+  grid-column: 2 / span 2;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 1.1;
+  color: #0F172A;
+  letter-spacing: -0.02em;
+}
+
+/* Part 2 Grid Layout */
+.rowPart2, .rowPart3, .rowPart4 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 24px;
+  align-items: stretch;
+  margin-bottom: 24px;
+}
+
+.introCol {
+  grid-column: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.introText {
+  font-size: 17px;
+  line-height: 1.6;
+  color: #475569;
+  max-width: 280px;
+}
+
+.glassCard {
+  background: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  border-radius: 24px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.04);
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  min-height: 420px;
+}
+
+.glassCard:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.08);
+  border-color: rgba(255, 255, 255, 0.8);
+  background: rgba(255, 255, 255, 0.9);
+}
+
+.illustArea {
+  height: 200px;
+  position: relative;
+  margin-bottom: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.cardTitle {
+  font-size: 24px;
+  font-weight: 700;
+  color: #0F172A;
+  margin-bottom: 12px;
+}
+
+.cardDesc {
+  font-size: 15px;
+  line-height: 1.5;
+  color: #64748B;
+}
+
+/* Chat Illustration Styles */
+.chatBubble {
+  background: white;
+  padding: 10px 16px;
+  border-radius: 18px 18px 18px 4px;
+  font-size: 11px;
+  color: #475569;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  margin-bottom: 8px;
+  max-width: 90%;
+  border: 1px solid #F1F5F9;
+}
+
+.bubbleRight {
+  align-self: flex-end;
+  background: #5B63D3;
+  color: white;
+  border-radius: 18px 18px 4px 18px;
+  border: none;
+}
+
+.chatOrb {
+  position: absolute;
+  width: 120px;
+  height: 120px;
+  background: radial-gradient(circle, rgba(91, 99, 211, 0.2) 0%, rgba(91, 99, 211, 0) 70%);
+  border-radius: 50%;
+  filter: blur(10px);
+  z-index: -1;
+  bottom: 0;
+  right: 20%;
+}
+
+/* Document Illustration Styles */
+.docFrame {
+  width: 140px;
+  height: 180px;
+  background: white;
+  border: 1px solid #E2E8F0;
+  border-radius: 4px;
+  padding: 16px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.03);
+  position: relative;
+}
+
+.docLine {
+  height: 4px;
+  background: #F1F5F9;
+  margin-bottom: 6px;
+  border-radius: 2px;
+}
+
+.docLineGradient {
+  background: linear-gradient(90deg, #F1F5F9 0%, #D1D5DB 100%);
+}
+
+/* Insights Illustration Styles */
+.insightsContainer {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.graphLines {
+  width: 100%;
+  height: 60px;
+  position: relative;
+  margin-top: 40px;
+}
+
+.graphSvg {
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+}
+
+.comparisonBox {
+  position: absolute;
+  top: -60px;
+  right: 20%;
+  background: white;
+  border: 1px solid #F1F5F9;
+  border-radius: 8px;
+  padding: 10px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+  font-size: 10px;
+  width: 110px;
+  z-index: 2;
+}
+
+/* Detection Illustration Styles */
+.waveContainer {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.waveBars {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+}
+
+.waveBar {
+  width: 2px;
+  background: #5B63D3;
+  border-radius: 1px;
+  opacity: 0.3;
+}
+
+.wavePointer {
+  position: absolute;
+  height: 80px;
+  width: 2px;
+  background: #5B63D3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.diamond {
+  width: 8px;
+  height: 8px;
+  background: #5B63D3;
+  transform: rotate(45deg);
+  position: absolute;
+  bottom: 0;
+}
+
+/* Outsourcing & Explore Cards */
+.wideCard {
+  grid-column: span 2;
+  min-height: 480px;
+}
+
+.smallCard {
+  grid-column: span 1;
+}
+
+.outsourcingIllust {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  width: 100%;
+}
+
+.slaBadge {
+  background: white;
+  padding: 12px 24px;
+  border-radius: 50px;
+  border: 1px solid #E2E8F0;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+  font-weight: 700;
+  color: #5B63D3;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.criticalTask {
+  background: rgba(255, 255, 255, 0.8);
+  padding: 12px 20px;
+  border-radius: 12px;
+  border: 1px solid #F1F5F9;
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 13px;
+  color: #475569;
+}
+
+.statusDot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #10B981;
+}
+
+.exploreProfile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  width: 100%;
+}
+
+.avatarContainer {
+  position: relative;
+  width: 60px;
+  height: 60px;
+}
+
+.avatar {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: #E2E8F0;
+  object-fit: cover;
+  border: 2px solid white;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.activeDot {
+  position: absolute;
+  bottom: 2px;
+  right: 2px;
+  width: 12px;
+  height: 12px;
+  background: #10B981;
+  border: 2px solid white;
+  border-radius: 50%;
+}
+
+.exploreName {
+  font-size: 14px;
+  font-weight: 600;
+  color: #1E293B;
+  text-align: center;
+}
+
+.exploreStatus {
+  font-size: 12px;
+  color: #5B63D3;
+  margin-top: -8px;
+}
+
+.contactBtn {
+  margin-top: 10px;
+  padding: 8px 20px;
+  background: #0F172A;
+  color: white;
+  border-radius: 50px;
+  font-size: 13px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.exploreLink {
+  margin-top: auto;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: #0F172A;
+  font-weight: 600;
+  font-size: 16px;
+  padding-bottom: 4px;
+  border-bottom: 2px solid #E2E8F0;
+  width: fit-content;
+}
+
+@media (max-width: 1024px) {
+  .header, .rowPart2 {
+    grid-template-columns: 1fr;
+  }
+  .mainTitle { grid-column: 1; font-size: 36px; }
+  .introCol { margin-bottom: 32px; }
+  .introText { max-width: 100%; }
+}

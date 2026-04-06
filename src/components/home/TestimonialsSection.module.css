@@ -1,0 +1,241 @@
+.section {
+  padding: 120px 0;
+  background: #f8fafc;
+}
+
+.header {
+  margin-bottom: 64px;
+}
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: #5B63D3;
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  margin-bottom: 24px;
+}
+
+.title {
+  font-size: 48px;
+  font-weight: 800;
+  color: #0F172A;
+  line-height: 1.1;
+  margin-bottom: 24px;
+  letter-spacing: -0.02em;
+  max-width: 800px;
+}
+
+.subtitle {
+  font-size: 18px;
+  color: #64748B;
+  line-height: 1.6;
+  max-width: 700px;
+}
+
+/* Bento Grid */
+.bentoGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto auto;
+  gap: 24px;
+}
+
+.card {
+  background: white;
+  border-radius: 20px;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+  border: 1px solid #e2e8f0;
+}
+
+/* Card Specifics */
+.imageCard {
+  grid-column: 1 / span 1.5;
+  padding: 0;
+  overflow: hidden;
+  border: none;
+}
+
+.fullImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.metricCardLight {
+  grid-column: 2 / span 2;
+  justify-content: space-between;
+}
+
+.blueCard {
+  grid-column: 1 / span 1.5;
+  background: linear-gradient(135deg, #6366f1 0%, #4338ca 100%);
+  color: white;
+  border: none;
+}
+
+.simpleCard {
+  grid-column: 2;
+  justify-content: space-between;
+}
+
+.darkCard {
+  grid-column: 3;
+  background: #1e293b;
+  color: white;
+  border: none;
+  justify-content: space-between;
+}
+
+/* Typography Inside Cards */
+.quoteIcon {
+  font-size: 64px;
+  color: #6366f1;
+  line-height: 1;
+  margin-bottom: -10px;
+  font-family: serif;
+}
+
+.quoteIconWhite {
+  font-size: 64px;
+  color: rgba(255, 255, 255, 0.4);
+  line-height: 1;
+  margin-bottom: -10px;
+  font-family: serif;
+}
+
+.quoteText {
+  font-size: 18px;
+  color: #1e293b;
+  line-height: 1.6;
+  font-weight: 500;
+  margin-bottom: 24px;
+}
+
+.quoteTextWhite {
+  font-size: 20px;
+  color: white;
+  line-height: 1.6;
+  font-weight: 500;
+  margin-bottom: 32px;
+}
+
+.quoteTextSmall {
+  font-size: 16px;
+  color: #64748B;
+  line-height: 1.6;
+}
+
+.quoteTextWhiteSmall {
+  font-size: 16px;
+  color: #cbd5e1;
+  line-height: 1.6;
+}
+
+/* Author Section */
+.author {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 32px;
+}
+
+.avatar {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.authorName {
+  font-size: 16px;
+  font-weight: 700;
+  color: #0f172a;
+}
+
+.authorRole {
+  font-size: 14px;
+  color: #64748B;
+}
+
+.authorNameWhite {
+  font-size: 16px;
+  font-weight: 700;
+  color: white;
+}
+
+.authorRoleWhite {
+  font-size: 14px;
+  color: #94a3b8;
+}
+
+/* Metrics Row */
+.metricRow {
+  display: flex;
+  gap: 40px;
+  margin-top: auto;
+  padding-top: 24px;
+  border-top: 1px solid #f1f5f9;
+}
+
+.metricRowWhite {
+  display: flex;
+  justify-content: space-between;
+  margin-top: auto;
+  padding-top: 24px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.metricNum {
+  font-size: 48px;
+  font-weight: 800;
+  color: #0f172a;
+  line-height: 1;
+}
+
+.metricLabel {
+  font-size: 14px;
+  color: #64748B;
+  margin-top: 4px;
+}
+
+.metricNumWhite {
+  font-size: 48px;
+  font-weight: 800;
+  color: white;
+  line-height: 1;
+}
+
+.metricLabelWhite {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.8);
+  margin-top: 4px;
+}
+
+/* Responsiveness */
+@media (max-width: 1024px) {
+  .bentoGrid {
+    grid-template-columns: 1fr 1fr;
+  }
+  .imageCard, .metricCardLight, .blueCard {
+    grid-column: span 2;
+  }
+  .simpleCard, .darkCard {
+    grid-column: span 1;
+  }
+}
+
+@media (max-width: 640px) {
+  .bentoGrid {
+    grid-template-columns: 1fr;
+  }
+  .simpleCard, .darkCard {
+    grid-column: span 1;
+  }
+}
