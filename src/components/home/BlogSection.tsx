@@ -9,25 +9,25 @@ import { RiEyeLine, RiArrowRightLine } from 'react-icons/ri';
 const posts = [
   {
     id: 1,
-    title: "Como a IA está Revolucionando o Suporte ao Cliente em 2025",
-    summary: "Veja como chatbots de IA e PLN aprimoram o suporte com velocidade e personalização.",
-    date: "18 Jun, 2025",
+    title: "Cloud Computing: Nuvem Pública, Privada ou Híbrida — Qual escolher?",
+    summary: "Entenda as diferenças entre os modelos de nuvem e como a Focus Network pode ajudar sua empresa a fazer a escolha certa com segurança e economia.",
+    date: "10 Mar, 2025",
     image: "/images/blog_1.png",
     isLarge: true
   },
   {
     id: 2,
-    title: "Construindo uma Startup Pronta para IA: Dicas para Fundadores",
-    summary: "Ajude startups a adotarem IA precocemente com soluções escaláveis e econômicas.",
-    date: "29 Mai, 2025",
+    title: "Por que monitorar sua infraestrutura de TI com Zabbix e Grafana?",
+    summary: "Monitoramento proativo evita paradas, previne ataques e garante disponibilidade. Veja como transformamos indicadores em dashboards gerenciáveis.",
+    date: "02 Fev, 2025",
     image: "/images/blog_2.png",
     isLarge: false
   },
   {
     id: 3,
-    title: "5 Integrações SaaS Essenciais para Turbinar seu Fluxo de Trabalho",
-    summary: "Otimize as operações da equipe integrando IA com ferramentas SaaS essenciais.",
-    date: "04 Jun, 2025",
+    title: "SAP Business One: o ERP ideal para empresas em crescimento",
+    summary: "Conheça como o SAP B1, em parceria com a Ramo Sistemas, pode transformar a gestão da sua empresa com eficiência e visibilidade total.",
+    date: "15 Jan, 2025",
     image: "/images/blog_3.png",
     isLarge: false
   }
@@ -48,9 +48,9 @@ export default function BlogSection() {
             </span>
           </div>
           <div className={styles.headerRight}>
-            <h2 className={styles.title}>Descubra o Futuro da Tecnologia em Seus Negócios</h2>
+            <h2 className={styles.title}>Conteúdo especializado em TI para o seu negócio</h2>
             <p className={styles.description}>
-              Fique por dentro das últimas tendências em TI, infraestrutura digital e inovações que impulsionam o crescimento moderno.
+              Fique por dentro das melhores práticas em infraestrutura, segurança, Cloud Computing, SAP Business One e monitoramento NOC.
             </p>
           </div>
         </div>

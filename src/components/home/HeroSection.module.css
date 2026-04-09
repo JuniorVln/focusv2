@@ -22,12 +22,10 @@
 .overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(
-    135deg,
-    rgba(255,255,255,0.15) 0%,
-    rgba(240,242,247,0.08) 50%,
-    rgba(91,99,211,0.04) 100%
-  );
+  background: linear-gradient(135deg,
+      rgba(255, 255, 255, 0.15) 0%,
+      rgba(240, 242, 247, 0.08) 50%,
+      rgba(5, 69, 121, 0.04) 100%);
   z-index: 1;
 }
 
@@ -38,7 +36,7 @@
   left: 0;
   right: 0;
   height: 200px;
-  background: linear-gradient(to bottom, transparent, rgba(255,255,255,0.9));
+  background: linear-gradient(to bottom, transparent, rgba(255, 255, 255, 0.9));
   z-index: 2;
 }
 
@@ -59,7 +57,7 @@
 /* Left side */
 .left {
   flex: 1;
-  max-width: 800px;
+  max-width: 900px;
   display: flex;
   flex-direction: column;
   gap: 24px;
@@ -81,18 +79,20 @@
   border-radius: 50%;
   border: 2.5px solid white;
   margin-left: -10px;
-  background: linear-gradient(135deg, #5B63D3, #7B82E0);
+  background: linear-gradient(135deg, #054579, #2a78b5);
   display: flex;
   align-items: center;
   justify-content: center;
   color: white;
   font-size: 13px;
   font-weight: 600;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.12);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
   overflow: hidden;
 }
 
-.avatar:first-child { margin-left: 0; }
+.avatar:first-child {
+  margin-left: 0;
+}
 
 .teamMeta {
   display: flex;
@@ -111,9 +111,9 @@
 }
 
 .headline {
-  font-size: clamp(36px, 5vw, 72px);
+  font-size: clamp(32px, 4.2vw, 62px);
   font-weight: 700;
-  line-height: 1.05;
+  line-height: 1.08;
   letter-spacing: -0.03em;
   color: var(--text-primary);
 }
@@ -129,7 +129,7 @@
   font-size: 17px;
   line-height: 1.65;
   color: var(--text-body);
-  max-width: 460px;
+  max-width: 600px;
 }
 
 .ctaRow {
@@ -157,7 +157,7 @@
 .btnPrimary:hover {
   background: var(--primary-dark);
   transform: translateY(-2px);
-  box-shadow: 0 8px 32px rgba(91,99,211,0.4);
+  box-shadow: 0 8px 32px rgba(5, 69, 121, 0.4);
 }
 
 .btnSecondary {
@@ -222,12 +222,14 @@
 }
 
 .statCard.accent {
-  background: linear-gradient(135deg, #6b66ff, #5b63d3);
+  background: linear-gradient(135deg, #054579, #03345c);
   border: none;
 }
 
 .statCard.accent .statValue,
-.statCard.accent .statLabel { color: white; }
+.statCard.accent .statLabel {
+  color: white;
+}
 
 .statValue {
   font-size: 52px;
@@ -266,9 +268,20 @@
   background: rgba(255, 255, 255, 0.2);
 }
 
-.pixel:nth-child(1) { grid-column: 2; grid-row: 1; }
-.pixel:nth-child(2) { grid-column: 1; grid-row: 2; }
-.pixel:nth-child(3) { grid-column: 2; grid-row: 2; }
+.pixel:nth-child(1) {
+  grid-column: 2;
+  grid-row: 1;
+}
+
+.pixel:nth-child(2) {
+  grid-column: 1;
+  grid-row: 2;
+}
+
+.pixel:nth-child(3) {
+  grid-column: 2;
+  grid-row: 2;
+}
 
 /* Scroll indicator */
 .scrollIndicator {
@@ -287,12 +300,19 @@
 .scrollLine {
   width: 1px;
   height: 40px;
-  background: linear-gradient(to bottom, transparent, rgba(0,0,0,0.3));
+  background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.3));
 }
 
 @keyframes bounce {
-  0%, 100% { transform: translateX(-50%) translateY(0); }
-  50% { transform: translateX(-50%) translateY(6px); }
+
+  0%,
+  100% {
+    transform: translateX(-50%) translateY(0);
+  }
+
+  50% {
+    transform: translateX(-50%) translateY(6px);
+  }
 }
 
 @media (max-width: 900px) {
@@ -301,16 +321,29 @@
     align-items: flex-start;
     padding: 0 20px 60px;
   }
+
   .statsGrid {
     flex-direction: row;
     align-items: flex-start;
     width: 100%;
   }
-  .statCard { min-width: unset; flex: 1; }
+
+  .statCard {
+    min-width: unset;
+    flex: 1;
+  }
 }
 
 @media (max-width: 600px) {
-  .statsGrid { flex-direction: column; }
-  .statCard { width: 100%; }
-  .headline { font-size: 32px; }
+  .statsGrid {
+    flex-direction: column;
+  }
+
+  .statCard {
+    width: 100%;
+  }
+
+  .headline {
+    font-size: 32px;
+  }
 }

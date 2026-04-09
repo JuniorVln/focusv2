@@ -21,39 +21,39 @@ export default function ContactSection() {
             </span>
             
             <h2 className={styles.title}>
-              Inicie a Conversa Hoje
+              Fale Agora com um Especialista
             </h2>
-            
+
             <p className={styles.quote}>
-              "Na Focus Network, acreditamos que toda empresa merece o poder da tecnologia avançada — esteja você apenas começando ou escalando rápido. Minha equipe e eu estamos aqui para apoiar sua visão e ajudá-lo a seguir em frente com confiança."
+              "Na Focus Network, buscamos excelência em suporte, atendimento e desenvolvimento de práticas diferenciadas para continuar sendo referência na área. Minha equipe está pronta para atender sem robôs ou burocracias desnecessárias."
             </p>
-            
+
             <div className={styles.author}>
-              <Image 
-                src="/images/avatar_1.png" 
-                alt="Carlos Silva" 
-                width={48} 
-                height={48} 
-                className={styles.avatar} 
+              <Image
+                src="/images/avatar_1.png"
+                alt="Fundador Focus Network"
+                width={48}
+                height={48}
+                className={styles.avatar}
               />
               <div className={styles.authorInfo}>
-                <h4>Carlos Silva</h4>
-                <p>Fundador & CEO da Focus Network</p>
+                <h4>Equipe Focus Network</h4>
+                <p>Curitiba – PR | contato@focusnetwork.com.br</p>
               </div>
             </div>
-            
+
             <div className={styles.actions}>
               <div className={styles.btnGroup}>
-                <a href="#" className={styles.btnPrimary}>
-                  Começar Agora
+                <a href="/contato" className={styles.btnPrimary}>
+                  Entrar em Contato
                 </a>
                 <div className={styles.btnIconBox}>
                   <RiArrowRightUpLine />
                 </div>
               </div>
-              
-              <a href="#" className={styles.btnSecondary}>
-                Fale Conosco <RiArrowRightLine />
+
+              <a href="https://wa.me/554141414290" className={styles.btnSecondary}>
+                WhatsApp <RiArrowRightLine />
               </a>
             </div>
           </div>

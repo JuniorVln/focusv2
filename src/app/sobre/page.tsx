@@ -10,10 +10,10 @@ export const metadata: Metadata = {
 };
 
 const values = [
-  { icon: "🎯", title: "Excelência Técnica", desc: "Cada projeto é entregue com rigor técnico e padrões de missão crítica. Não aceitamos nada abaixo do melhor." },
-  { icon: "🤝", title: "Parceria Real", desc: "Não somos apenas fornecedores. Somos uma extensão da sua equipe, comprometidos com seus resultados." },
-  { icon: "🔒", title: "Segurança Sempre", desc: "Segurança não é uma feature — é a base de tudo que construímos e gerenciamos." },
-  { icon: "📈", title: "Foco em Resultado", desc: "Cada decisão técnica é guiada por impacto no negócio. TI que gera resultado mensurável." },
+  { icon: "🤝", title: "Comprometimento", desc: "Comprometimento e respeito com nossos clientes e colaboradores em cada projeto e atendimento." },
+  { icon: "😊", title: "Ambiente Agradável", desc: "Provemos um ambiente agradável com interação amigável entre cliente e prestadora de serviço." },
+  { icon: "🔒", title: "Normas Técnicas", desc: "Seguimos rigorosamente as normas técnicas de cada departamento, incluindo conformidade com LGPD." },
+  { icon: "💡", title: "Inovação Contínua", desc: "Buscamos sempre as melhores e mais inovadoras soluções em tecnologia para manter nossos clientes na vanguarda." },
 ];
 
 const milestones = [
@@ -25,10 +25,10 @@ const milestones = [
 ];
 
 const team = [
-  { name: "Marco Ribeiro", role: "CEO & Fundador", specialty: "Infraestrutura & Estratégia", initials: "MR", color: "#5B63D3" },
-  { name: "Ana Costa", role: "Diretora de SAP", specialty: "SAP Business One Certified", initials: "AC", color: "#7B82E0" },
-  { name: "Rafael Souza", role: "Head de Segurança", specialty: "Cibersegurança & Compliance", initials: "RS", color: "#4A52C0" },
-  { name: "Luiza Neves", role: "Tech Lead NOC", specialty: "Zabbix & Grafana", initials: "LN", color: "#8892F0" },
+  { name: "Marco Ribeiro", role: "CEO & Fundador", specialty: "Infraestrutura & Estratégia", initials: "MR", color: "#054579" },
+  { name: "Ana Costa", role: "Diretora de SAP", specialty: "SAP Business One Certified", initials: "AC", color: "#2a78b5" },
+  { name: "Rafael Souza", role: "Head de Segurança", specialty: "Cibersegurança & Compliance", initials: "RS", color: "#03345c" },
+  { name: "Luiza Neves", role: "Tech Lead NOC", specialty: "Zabbix & Grafana", initials: "LN", color: "#1a6aad" },
 ];
 
 export default function SobrePage() {
@@ -43,19 +43,18 @@ export default function SobrePage() {
               <div className={styles.heroLeft}>
                 <span className={styles.label}>Sobre Nós</span>
                 <h1 className={styles.heroTitle}>
-                  Não fazemos apenas suporte.<br />
-                  <span>Construímos empresas</span><br />
-                  inteligentes.
+                  Conheça a<br />
+                  <span>Focus Network</span>
                 </h1>
               </div>
               <div className={styles.heroRight}>
                 <p className={styles.heroDesc}>
-                  Com uma equipe altamente certificada e anos de trincheira, a Focus Network entrega excelência técnica em infraestrutura, segurança e ERP para empresas que não podem se dar ao luxo de falhar.
+                  A Focus Network é uma empresa especializada em Tecnologia da Informação. Desde 2017 no mercado, visa fornecer as melhores soluções em tecnologia, fazendo seus clientes se tornarem empresas inteligentes. Contamos com uma equipe capacitada, com anos de experiência e variadas certificações profissionais.
                 </p>
                 <div className={styles.heroStats}>
-                  <div className={styles.heroStat}><strong>8+</strong><span>Anos de mercado</span></div>
+                  <div className={styles.heroStat}><strong>+7</strong><span>Anos de mercado</span></div>
                   <div className={styles.heroStat}><strong>98%</strong><span>Satisfação do cliente</span></div>
-                  <div className={styles.heroStat}><strong>200+</strong><span>Projetos entregues</span></div>
+                  <div className={styles.heroStat}><strong>100+</strong><span>Clientes atendidos</span></div>
                 </div>
               </div>
             </div>
@@ -72,11 +71,11 @@ export default function SobrePage() {
             <div className={styles.missionGrid}>
               <div className={styles.missionCard}>
                 <h3>Nossa Missão</h3>
-                <p>Transformar a infraestrutura de TI das empresas em vantagem competitiva real — com tecnologia, segurança e pessoas certas.</p>
+                <p>Desenvolver soluções eficientes, inovadoras e únicas para atender os clientes, fazendo-os se tornarem empresas inteligentes através da tecnologia.</p>
               </div>
               <div className={`${styles.missionCard} ${styles.missionCardDark}`}>
                 <h3>Nossa Visão</h3>
-                <p>Ser a referência nacional em suporte técnico de missão crítica, reconhecida pela excelência, confiança e resultado entregue.</p>
+                <p>Ser referência em atendimento e desenvolvimento de práticas, tecnologia e inovações em Tecnologia da Informação no mercado brasileiro.</p>
               </div>
             </div>
             <div className={styles.valuesGrid}>
@@ -96,7 +95,7 @@ export default function SobrePage() {
           <div className="container">
             <div className={styles.sectionHeader}>
               <span className={styles.label}>Nossa Jornada</span>
-              <h2>8 anos construindo excelência</h2>
+              <h2>+7 anos construindo excelência em TI</h2>
             </div>
             <div className={styles.timeline}>
               {milestones.map((m, i) => (

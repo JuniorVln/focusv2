@@ -162,7 +162,7 @@
 }
 
 .btnPrimary {
-  background: #4f46e5;
+  background: #054579;
   color: white;
   padding: 12px 24px;
   border-radius: 20px 0 0 20px;
@@ -173,7 +173,7 @@
 }
 
 .btnIconBox {
-  background: #6366f1;
+  background: #2a78b5;
   padding: 12px 14px;
   border-radius: 0 20px 20px 0;
   display: flex;
@@ -184,7 +184,7 @@
 }
 
 .btnPrimary:hover {
-  background: #4338ca;
+  background: #03345c;
 }
 
 .btnSecondary {

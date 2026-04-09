@@ -94,10 +94,10 @@
 }
 
 .card.popular {
-  background: linear-gradient(160deg, #5259D0 0%, #7B82E0 100%);
+  background: linear-gradient(160deg, #054579 0%, #2a78b5 100%);
   border-color: transparent;
   color: white;
-  box-shadow: 0 8px 40px rgba(91,99,211,0.35);
+  box-shadow: 0 8px 40px rgba(5,69,121,0.35);
 }
 
 .popularBadge {

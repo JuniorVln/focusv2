@@ -34,7 +34,7 @@ export default function Footer() {
               <span className={styles.logoText}>FOCUS NETWORK</span>
             </div>
             <p className={styles.footerDesc}>
-              Transformamos infraestrutura em inteligência. Consultoria, segurança e implementação SAP Business One para empresas que precisam crescer.
+              Desde 2017 fornecemos as melhores soluções em TI: Cloud Computing, SAP Business One, NOC com Zabbix &amp; Grafana, Segurança e Outsourcing. Curitiba – PR.
             </p>
             <div className={styles.socialLinks}>
               <a href="#" className={styles.socialLink} aria-label="LinkedIn">in</a>
@@ -69,10 +69,10 @@ export default function Footer() {
         {/* Bottom */}
         <div className={styles.footerBottom}>
           <span className={styles.copyright}>
-            © Focus Network 2024. Todos os direitos reservados.
+            © Focus Network 2025. Todos os direitos reservados.
           </span>
-          <a href="#" className={styles.ctaBtn}>
-            Iniciar Conversa via WhatsApp ↗
+          <a href="https://wa.me/554141414290" className={styles.ctaBtn}>
+            Fale pelo WhatsApp ↗
           </a>
         </div>
       </div>

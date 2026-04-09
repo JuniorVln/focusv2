@@ -24,7 +24,7 @@
 .label {
   display: inline-block;
   padding: 6px 16px;
-  background: rgba(91, 99, 211, 0.1);
+  background: rgba(5, 69, 121, 0.1);
   color: var(--primary);
   border-radius: var(--radius-pill);
   font-size: 14px;
@@ -191,7 +191,7 @@
 .solutionLink:hover {
   transform: translateY(-2px);
   background: var(--primary-dark);
-  box-shadow: 0 6px 30px rgba(91, 99, 211, 0.4);
+  box-shadow: 0 6px 30px rgba(5, 69, 121, 0.4);
 }
 
 @media (max-width: 1024px) {

@@ -10,8 +10,8 @@ export const metadata: Metadata = {
 
 const contactItems = [
   { icon: "📧", label: "E-mail", value: "contato@focusnetwork.com.br" },
-  { icon: "📱", label: "WhatsApp", value: "+55 (11) 9 0000-0000" },
-  { icon: "📍", label: "Localização", value: "São Paulo, SP — Brasil" },
+  { icon: "📱", label: "Telefone / WhatsApp", value: "+55 (41) 4141-4290" },
+  { icon: "📍", label: "Endereço", value: "Av. República Argentina, 2275 — Água Verde, Curitiba – PR" },
   { icon: "🕐", label: "Atendimento", value: "Seg – Sex: 8h às 18h" },
 ];
 
@@ -28,10 +28,10 @@ export default function ContatoPage() {
                 <div>
                   <span className={styles.label}>Fale com a gente</span>
                   <h1 className={styles.contactInfoTitle}>
-                    Pronto para modernizar sua infraestrutura?
+                    Fale agora mesmo com a equipe da Focus Network
                   </h1>
                   <p className={styles.contactInfoDesc}>
-                    Fale com nosso time técnico e descubra a solução exata para os desafios da sua operação. Sem enrolação — só resultado.
+                    Atendimento sem robôs ou burocracias desnecessárias. Sabemos que cada minuto do seu sistema sem funcionar é um prejuízo. Entre em contato e encontre a solução certa para sua empresa.
                   </p>
                 </div>
                 <div className={styles.contactItems}>

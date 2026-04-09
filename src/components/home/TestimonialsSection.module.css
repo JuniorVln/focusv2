@@ -11,7 +11,7 @@
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  color: #5B63D3;
+  color: #054579;
   font-size: 15px;
   font-weight: 600;
   letter-spacing: 0.05em;
@@ -75,7 +75,7 @@
 
 .blueCard {
   grid-column: 1 / span 1.5;
-  background: linear-gradient(135deg, #6366f1 0%, #4338ca 100%);
+  background: linear-gradient(135deg, #054579 0%, #03345c 100%);
   color: white;
   border: none;
 }
@@ -96,7 +96,7 @@
 /* Typography Inside Cards */
 .quoteIcon {
   font-size: 64px;
-  color: #6366f1;
+  color: #054579;
   line-height: 1;
   margin-bottom: -10px;
   font-family: serif;

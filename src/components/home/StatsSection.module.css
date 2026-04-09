@@ -20,7 +20,7 @@
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  color: #5B63D3;
+  color: #054579;
   font-size: 15px;
   font-weight: 600;
   letter-spacing: 0.05em;
@@ -92,7 +92,7 @@
 /* Efficiency Card (Purple) */
 .efficiencyCard {
   grid-column: 4;
-  background: linear-gradient(135deg, #6366f1 0%, #4338ca 100%);
+  background: linear-gradient(135deg, #054579 0%, #03345c 100%);
   border: none;
   color: white;
 }

@@ -14,11 +14,11 @@ export default function FeaturesSection() {
           <div className={styles.badgeWrap}>
             <span className={styles.badgeText}>
               <RiSparklingFill className={styles.badgeIcon} />
-              Solução
+              Nossos Serviços
             </span>
           </div>
           <h2 className={styles.mainTitle}>
-            Desbloqueie o Poder da Infraestrutura Inteligente
+            A Focus Network possui os serviços certos para a sua empresa
           </h2>
         </header>
 
@@ -27,31 +27,30 @@ export default function FeaturesSection() {
           {/* Col 1: Texto de Introdução */}
           <div className={styles.introCol}>
             <p className={styles.introText}>
-              Oferecemos tecnologia de última geração para garantir que sua empresa não pare por problemas técnicos, 
-              focando na performance e segurança.
+              Cloud Computing, SAP Business One, NOC com Zabbix & Grafana, UTM Firewall, Segurança em TI e E-mail Corporativo. Soluções completas para sua empresa crescer com segurança.
             </p>
           </div>
 
-          {/* Col 2: Card Chat Support */}
+          {/* Col 2: Cloud Computing */}
           <div className={styles.glassCard}>
             <div className={styles.illustArea}>
-              <div style={{ display: 'flex', flexDirection: 'column', width: '100%' }}>
-                <div className={styles.chatBubble}>Can I send you a proposal via email?</div>
-                <div className={`${styles.chatBubble} ${styles.bubbleRight}`}>Yes, please.</div>
+              <div style={{ display: 'flex', flexDirection: 'column', width: '100%', gap: '8px' }}>
+                <div className={styles.chatBubble} style={{ background: '#f1f5f9' }}>☁️ Nuvem Pública (AWS / Azure / GCP)</div>
+                <div className={`${styles.chatBubble} ${styles.bubbleRight}`}>✔ Migração concluída</div>
                 <div className={styles.chatBubble} style={{ borderRadius: '18px', width: 'fit-content' }}>
-                  Done <span style={{ color: '#22C55E' }}>✔</span>
+                  Oracle Cloud <span style={{ color: '#22C55E' }}>Online</span>
                 </div>
-                <div className={styles.chatBubble} style={{ opacity: 0.7 }}>I'll send tailored solutions soon!</div>
+                <div className={styles.chatBubble} style={{ opacity: 0.7 }}>Backup e armazenamento ativo</div>
               </div>
               <div className={styles.chatOrb} />
             </div>
-            <h3 className={styles.cardTitle}>Suporte via Chat com IA</h3>
+            <h3 className={styles.cardTitle}>Cloud Computing</h3>
             <p className={styles.cardDesc}>
-              Melhore a experiência do cliente com respostas rápidas e automatizadas movidas por IA.
+              Infraestrutura em nuvem com AWS, Azure, GCP e Oracle Cloud. Nuvem pública, privada ou híbrida para hospedagem de ERP, servidores e aplicativos.
             </p>
           </div>
 
-          {/* Col 3: Card Document Handling */}
+          {/* Col 3: SAP Business One */}
           <div className={styles.glassCard}>
             <div className={styles.illustArea}>
               <div className={styles.docFrame}>
@@ -59,23 +58,23 @@ export default function FeaturesSection() {
                 <div className={styles.docCorner + ' ' + styles.cornerTR} />
                 <div className={styles.docCorner + ' ' + styles.cornerBL} />
                 <div className={styles.docCorner + ' ' + styles.cornerBR} />
-                <div className={styles.docLine} />
-                <div className={styles.docLine} style={{ width: '80%' }} />
-                <div className={styles.docLine} style={{ width: '60%', background: '#E2E8F0' }} />
+                <div className={styles.docLine} style={{ background: '#054579', width: '60%' }} />
+                <div className={styles.docLine} style={{ width: '90%' }} />
+                <div className={styles.docLine} style={{ width: '70%', background: '#E2E8F0' }} />
                 <div className={styles.docLine} style={{ marginTop: '12px', background: '#D1D5DB' }} />
-                <div className={styles.docLine} style={{ width: '70%', background: '#D1D5DB' }} />
-                <div style={{ 
-                  height: '40px', 
-                  width: '100%', 
-                  background: 'linear-gradient(rgba(255,255,255,0), #D1D5DB)', 
+                <div className={styles.docLine} style={{ width: '80%', background: '#D1D5DB' }} />
+                <div style={{
+                  height: '40px',
+                  width: '100%',
+                  background: 'linear-gradient(rgba(255,255,255,0), #D1D5DB)',
                   marginTop: '12px',
-                  borderRadius: '2px' 
+                  borderRadius: '2px'
                 }} />
               </div>
             </div>
-            <h3 className={styles.cardTitle}>Gestão Inteligente de Documentos</h3>
+            <h3 className={styles.cardTitle}>SAP Business One (ERP)</h3>
             <p className={styles.cardDesc}>
-              Extraia e gerencie dados críticos de documentos automaticamente com a ajuda da IA.
+              Em parceria com a Ramo Sistemas, entregamos o melhor ERP do mercado para empresas em crescimento — do diagnóstico ao suporte contínuo.
             </p>
           </div>
         </div>
@@ -88,7 +87,7 @@ export default function FeaturesSection() {
               <div className={styles.insightsContainer}>
                 <div className={styles.comparisonBox}>
                   <div style={{ fontWeight: 'bold', color: '#64748B', marginBottom: '6px' }}>Comparison</div>
-                  <div style={{ display: 'flex', justifyContent: 'space-between', color: '#5B63D3', marginBottom: '4px' }}>
+                  <div style={{ display: 'flex', justifyContent: 'space-between', color: '#054579', marginBottom: '4px' }}>
                     <span>Nov 24</span>
                     <span>$3.642</span>
                   </div>
@@ -102,7 +101,7 @@ export default function FeaturesSection() {
                     <path 
                       d="M0,35 Q15,30 25,32 T50,38 T75,30 T100,5" 
                       fill="none" 
-                      stroke="#5B63D3" 
+                      stroke="#054579"
                       strokeWidth="2" 
                     />
                     <path 
@@ -111,16 +110,16 @@ export default function FeaturesSection() {
                       stroke="#E2E8F0" 
                       strokeWidth="2" 
                     />
-                    <circle cx="95" cy="10" r="2.5" fill="#5B63D3" stroke="white" strokeWidth="1" />
+                    <circle cx="95" cy="10" r="2.5" fill="#054579" stroke="white" strokeWidth="1" />
                     <circle cx="95" cy="18" r="2.5" fill="#E2E8F0" stroke="white" strokeWidth="1" />
                     <line x1="95" y1="10" x2="95" y2="40" stroke="#CBD5E1" strokeDasharray="2 2" />
                   </svg>
                 </div>
               </div>
             </div>
-            <h3 className={styles.cardTitle}>Insights de Negócios com IA</h3>
+            <h3 className={styles.cardTitle}>Monitoramento com Zabbix & Grafana</h3>
             <p className={styles.cardDesc}>
-              Descubra tendências, preveja resultados e tome decisões mais inteligentes usando IA.
+              Transformamos indicadores em Dashboards gerenciáveis. Monitoramento 24/7 com alertas em tempo real para servidores, redes, links e muito mais.
             </p>
           </div>
 
@@ -132,7 +131,7 @@ export default function FeaturesSection() {
                   position: 'absolute', 
                   width: '120px', 
                   height: '120px', 
-                  background: 'radial-gradient(circle, rgba(91, 99, 211, 0.1) 0%, transparent 70%)',
+                  background: 'radial-gradient(circle, rgba(5, 69, 121, 0.1) 0%, transparent 70%)',
                   borderRadius: '50%'
                 }} />
                 <div className={styles.waveBars}>
@@ -149,9 +148,9 @@ export default function FeaturesSection() {
                 </div>
               </div>
             </div>
-            <h3 className={styles.cardTitle}>Detecção e Marcação Automatizada</h3>
+            <h3 className={styles.cardTitle}>Segurança em TI & LGPD</h3>
             <p className={styles.cardDesc}>
-              Identifique e marque anomalias visuais ou sonoras para aumentar a segurança operacional.
+              Consultoria completa em segurança dos computadores, sistemas e servidores da sua empresa — alinhada com as normas da LGPD e principais regulamentações.
             </p>
           </div>
 
@@ -208,12 +207,12 @@ export default function FeaturesSection() {
                 </button>
               </div>
             </div>
-            <h3 className={styles.cardTitle}>Explorar mais</h3>
+            <h3 className={styles.cardTitle}>Fale com um Especialista</h3>
             <p className={styles.cardDesc}>
-              Utilize a Focus Network para escalar sua operação e reduzir o tempo gasto em tarefas manuais.
+              Atendimento sem robôs. Nossa equipe certificada está disponível para resolver os desafios tecnológicos da sua empresa.
             </p>
             <div className={styles.exploreLink}>
-              Começar Agora
+              Entrar em contato
               <RiArrowRightUpLine />
             </div>
           </div>

@@ -20,7 +20,7 @@ export default function StatsSection() {
             Resultados reais para empresas reais
           </h2>
           <p className={styles.mainDesc}>
-            Não fazemos apenas suporte. Construímos empresas inteligentes — com uma equipe certificada e anos de trincheira na operação.
+            Desde 2017, a Focus Network entrega excelência em TI para empresas de todos os tamanhos — com uma equipe certificada e suporte sem burocracia.
           </p>
         </header>
 
@@ -46,39 +46,39 @@ export default function StatsSection() {
             </p>
           </div>
 
-          {/* 3. Efficiency Card (Purple Square) */}
+          {/* 3. Efficiency Card */}
           <div className={`${styles.card} ${styles.efficiencyCard}`}>
-            <div className={styles.statNum}>3x</div>
-            <div className={styles.statLabel}>Eficiência Operacional</div>
+            <div className={styles.statNum}>24/7</div>
+            <div className={styles.statLabel}>Monitoramento NOC</div>
             <RiArrowRightUpLine className={styles.upArrow} />
             <p className={styles.statDesc}>
-              Nossos clientes reportam um aumento de 3x na velocidade após adotarem nossos processos.
+              Infraestrutura monitorada 24 horas por dia com Zabbix e Grafana — alertas em tempo real antes de impactar sua operação.
             </p>
           </div>
 
-          {/* 4. AI Launches Card (Small Square) */}
+          {/* 4. Projects Card */}
           <div className={`${styles.card} ${styles.launchesCard}`}>
-            <div className={styles.statNum}>120+</div>
-            <div className={styles.statLabel}>Projetos Entregues</div>
+            <div className={styles.statNum}>2017</div>
+            <div className={styles.statLabel}>No Mercado</div>
             <p className={styles.statDesc}>
-              Empresas lançaram novas frentes de tecnologia com nossa consultoria personalizada.
+              Mais de 7 anos entregando soluções de TI com excelência e certificações profissionais reconhecidas.
             </p>
           </div>
 
           {/* 5. Partners Card (Wide Dark Card) */}
           <div className={`${styles.card} ${styles.partnersCard}`}>
             <div className={styles.logoRow}>
-              <div style={{ fontSize: '24px', fontWeight: 'bold' }}>Logoipsum</div>
-              <div style={{ fontSize: '24px', fontWeight: 'bold' }}>Logoipsum</div>
-              <div style={{ fontSize: '24px', fontWeight: 'bold' }}>Logoipsum</div>
-              <div style={{ fontSize: '24px', fontWeight: 'bold' }}>Logoipsum</div>
+              <div style={{ fontSize: '18px', fontWeight: 700, letterSpacing: '0.05em' }}>FORTINET</div>
+              <div style={{ fontSize: '18px', fontWeight: 700, letterSpacing: '0.05em' }}>BITDEFENDER</div>
+              <div style={{ fontSize: '18px', fontWeight: 700, letterSpacing: '0.05em' }}>SKYMAIL</div>
+              <div style={{ fontSize: '18px', fontWeight: 700, letterSpacing: '0.05em' }}>APC</div>
             </div>
             <div>
-              <div className={styles.statNum}>50+</div>
-              <div className={styles.statLabel}>Parceiros de Longo Prazo</div>
+              <div className={styles.statNum}>100+</div>
+              <div className={styles.statLabel}>Clientes Atendidos</div>
             </div>
             <p className={styles.statDesc}>
-              Mais de 50 empresas continuam trabalhando conosco por mais de dois anos.
+              Parceiros líderes de mercado como Fortinet, Bitdefender, Skymail e APC — garantindo as melhores soluções para sua empresa.
             </p>
           </div>
         </div>

@@ -32,8 +32,8 @@ const faqs = [
     a: "Após a contratação, nossa equipe realiza um diagnóstico completo do ambiente em até 5 dias úteis e apresenta o plano de implementação."
   },
   {
-    q: "Vocês atendem fora de São Paulo?",
-    a: "Sim. Atendemos clientes em todo o Brasil. Para algumas atividades presenciais, verificamos a viabilidade conforme a localização."
+    q: "Vocês atendem fora de Curitiba?",
+    a: "Sim. Atendemos clientes em todo o Brasil a partir da nossa sede em Curitiba – PR. Para algumas atividades presenciais, verificamos a viabilidade conforme a localização."
   },
 ];
 

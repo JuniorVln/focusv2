@@ -6,32 +6,32 @@ import { RiCustomerService2Fill, RiArrowRightUpLine, RiArrowDownSLine, RiArrowUp
 
 const faqData = [
   {
-    question: "Quais tipos de infraestrutura a Focus Network atende?",
-    answer: "Atendemos desde pequenas empresas com necessidades de hardware e redes locais até grandes corporações com ambientes complexos de nuvem híbrida, multi-cloud (AWS, Azure, GCP) e servidores on-premise."
+    question: "Quem deve migrar para Cloud Computing?",
+    answer: "Toda empresa deve migrar para Cloud Computing, ao menos algum tipo de serviço. Links de internet e custo do Cloud têm ficado cada vez mais atrativos. A Focus Network oferece nuvem pública (AWS, Azure, GCP, Oracle Cloud), privada e híbrida, além de Datacenter próprio no Brasil sem dependência do câmbio."
   },
   {
-    question: "Como funciona o monitoramento 24/7 (NOC)?",
-    answer: "Utilizamos ferramentas como Zabbix e Grafana para monitorar em tempo real a saúde de servidores, redes e aplicações. Nossa equipe é alertada instantaneamente em caso de anomalias, resolvendo problemas proativamente antes que afetem sua operação."
+    question: "O monitoramento com Zabbix e Grafana funciona 24x7?",
+    answer: "Sim. Nossa ferramenta monitora e envia alertas 24 horas por dia, 7 dias por semana. Dependendo do contrato, os alertas são tratados imediatamente ou no próximo dia útil. Monitoramos computadores, servidores, impressoras, roteadores, switches, links de internet, sites e muito mais."
   },
   {
     question: "Vocês realizam implementação completa do SAP Business One?",
-    answer: "Sim, somos especialistas no ciclo completo do SAP B1: desde o diagnóstico de processos e configuração inicial até migração de dados, customizações de add-ons e treinamento das equipes."
+    answer: "Sim. A Focus Network em parceria com a Ramo Sistemas entrega o que há de melhor em ERP no mercado. Atendemos desde o diagnóstico de processos e configuração inicial até migração de dados, customizações e treinamento das equipes."
+  },
+  {
+    question: "O que é UTM Firewall e por que minha empresa precisa?",
+    answer: "UTM (Unified Threat Management) é uma solução de segurança completa em um único dispositivo. A Focus Network trabalha com as principais marcas do mercado: Fortinet, Sophos e Pfsense, protegendo toda a sua rede corporativa."
   },
   {
     question: "A Focus Network ajuda com a adequação à LGPD?",
-    answer: "Com certeza. Nossa frente de Segurança & Compliance realiza auditorias, análise de vulnerabilidades e implementa as camadas técnicas necessárias (Firewalls, SIEM, Controle de Acessos) para que sua empresa esteja 100% conforme a legislação."
+    answer: "Com certeza. Nossa equipe efetua consultoria completa em segurança dos computadores, sistemas e servidores da sua empresa, tudo alinhado com as novas normas da LGPD e principais regulamentações de mercado."
   },
   {
-    question: "Qual é o SLA garantido no Outsourcing de TI?",
-    answer: "Nossos contratos de Outsourcing possuem SLAs detalhados com tempos de resposta garantidos (N1, N2 e N3), variando conforme a criticidade do chamado, garantindo que sua TI nunca seja um gargalo."
+    question: "A implantação do monitoramento é complexa?",
+    answer: "Somos especialistas nas ferramentas Zabbix e Grafana e desenvolvemos uma forma de trabalho otimizada onde entregamos projetos de forma simples. Treinamos a equipe de TI local caso o cliente possua. E o melhor: utilizamos ferramentas OpenSource, sem custos de licenciamento."
   },
   {
-    question: "Meus dados estarão seguros em suas soluções de Cloud?",
-    answer: "Sim. Implementamos as melhores práticas de cibersegurança, incluindo criptografia de ponta a ponta, backups automatizados e redundância geográfica, garantindo a integridade e disponibilidade total dos seus dados."
-  },
-  {
-    question: "Quanto tempo leva para implementar as soluções da Focus?",
-    answer: "O tempo varia conforme a complexidade. Um diagnóstico inicial leva de 1 a 2 semanas, enquanto implementações de infraestrutura ou ERP são planejadas em roadmaps personalizados para minimizar impactos operacionais."
+    question: "Vocês atendem minha empresa em todo o Brasil?",
+    answer: "Sim. Atendemos clientes em todo o Brasil a partir da nossa sede em Curitiba – PR. Para atividades presenciais, verificamos a viabilidade conforme a localização. Nosso atendimento é realizado sem robôs ou burocracias desnecessárias."
   }
 ];
 

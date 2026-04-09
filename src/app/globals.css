@@ -2,10 +2,10 @@
 
 :root {
   /* Colors */
-  --primary: #5B63D3;
-  --primary-dark: #4A52C0;
-  --primary-light: #7B82E0;
-  --primary-glow: rgba(91, 99, 211, 0.2);
+  --primary: #054579;
+  --primary-dark: #03345c;
+  --primary-light: #2a78b5;
+  --primary-glow: rgba(5, 69, 121, 0.12);
   --dark: #0F1117;
   --dark-2: #1A1A2E;
   --dark-3: #252535;
@@ -33,7 +33,7 @@
   --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.06);
   --shadow-md: 0 4px 24px rgba(0, 0, 0, 0.08);
   --shadow-lg: 0 8px 48px rgba(0, 0, 0, 0.12);
-  --shadow-primary: 0 4px 24px rgba(91, 99, 211, 0.3);
+  --shadow-primary: 0 4px 24px rgba(5, 69, 121, 0.3);
 
   /* Spacing */
   --section-padding: 100px 0;

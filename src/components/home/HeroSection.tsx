@@ -3,7 +3,7 @@
 import Link from "next/link";
 import styles from "./HeroSection.module.css";
 
-const avatarColors = ["#5B63D3", "#7B82E0", "#4A52C0", "#8892F0"];
+const avatarColors = ["#054579", "#2a78b5", "#03345c", "#1a6aad"];
 const avatarInitials = ["M", "A", "R", "L"];
 
 const stats = [
@@ -56,20 +56,20 @@ export default function HeroSection() {
           {/* Headline */}
           <h1 className={styles.headline}>
             Soluções em Tecnologia<br />
-            para o seu <span>Negócio</span>
+            para o <span>Tamanho do seu Negócio</span>
           </h1>
 
           {/* Subtitle */}
           <p className={styles.subtitle}>
-            Transformamos infraestrutura em inteligência. Consultoria, segurança e implementação SAP Business One para empresas que precisam escalar sem gargalos técnicos.
+            Desde 2017 a Focus Network fornece as melhores soluções em tecnologia, fazendo seus clientes se tornarem empresas inteligentes. Cloud, SAP Business One, NOC e Segurança em TI.
           </p>
 
           {/* CTAs */}
           <div className={styles.ctaRow}>
-            <Link href="#contato" className={styles.btnPrimary}>
-              Começar Agora →
+            <Link href="/contato" className={styles.btnPrimary}>
+              Fale com um Especialista →
             </Link>
-            <Link href="#solucoes" className={styles.btnSecondary}>
+            <Link href="/solucoes" className={styles.btnSecondary}>
               Ver Soluções
             </Link>
           </div>
