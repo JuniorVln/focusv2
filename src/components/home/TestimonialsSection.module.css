@@ -233,9 +233,12 @@
 
 @media (max-width: 640px) {
   .bentoGrid {
-    grid-template-columns: 1fr;
+    grid-template-columns: minmax(0, 1fr);
   }
-  .simpleCard, .darkCard {
-    grid-column: span 1;
+  .imageCard, .metricCardLight, .blueCard, .simpleCard, .darkCard {
+    grid-column: auto;
+  }
+  .metricNum, .metricNumWhite {
+    font-size: 36px;
   }
 }
