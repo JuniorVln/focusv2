@@ -608,6 +608,8 @@
 /* Mobile */
 @media (max-width: 900px) {
   .heroInner, .missionGrid, .contactGrid, .solutionRow { grid-template-columns: 1fr; gap: 40px; }
+  .contactGrid > * { min-width: 0; }
+  .contactItemValue { overflow-wrap: anywhere; }
   .valuesGrid, .teamGrid { grid-template-columns: repeat(2, 1fr); }
   .blogGrid { grid-template-columns: repeat(2, 1fr); }
   .timeline::before { left: 24px; }

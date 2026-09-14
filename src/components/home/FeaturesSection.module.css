@@ -365,9 +365,11 @@
 }
 
 @media (max-width: 1024px) {
-  .header, .rowPart2 {
+  .header, .rowPart2, .rowPart3, .rowPart4 {
     grid-template-columns: 1fr;
   }
+  .rowPart3 > div:empty, .rowPart4 > div:empty { display: none; }
+  .glassCard { min-width: 0; }
   .mainTitle { grid-column: 1; font-size: 36px; }
   .introCol { margin-bottom: 32px; }
   .introText { max-width: 100%; }
