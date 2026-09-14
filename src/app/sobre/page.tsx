@@ -6,7 +6,7 @@ import styles from "./page.module.css";
 
 export const metadata: Metadata = {
   title: "Sobre Nós — Focus Network",
-  description: "Conheça a Focus Network: equipe certificada com mais de 8 anos de experiência em infraestrutura, segurança e SAP Business One.",
+  description: "Conheça a Focus Network: desde 2017 em tecnologia, hoje especializada em cloud com Azure, AWS e Oracle Cloud.",
 };
 
 const values = [
@@ -17,18 +17,16 @@ const values = [
 ];
 
 const milestones = [
-  { year: "2017", title: "Fundação", desc: "Fundada com foco em infraestrutura e suporte técnico para PMEs." },
-  { year: "2019", title: "Expansão SAP", desc: "Iniciamos as implementações de SAP Business One com equipe certificada." },
-  { year: "2021", title: "NOC 24/7", desc: "Lançamos o Centro de Operações de Rede com monitoramento contínuo." },
-  { year: "2023", title: "Cibersegurança", desc: "Criamos a vertical de Segurança & Compliance para ambientes críticos." },
-  { year: "2025+", title: "Crescimento", desc: "Expansão nacional com novos parceiros e soluções integradas de IA." },
+  { year: "2017", title: "Fundação", desc: "Fundada em Curitiba com foco em infraestrutura e suporte de TI." },
+  { year: "Evolução", title: "Rumo à nuvem", desc: "A experiência em infraestrutura levou a empresa a migrar e operar ambientes em cloud." },
+  { year: "Hoje", title: "Foco total em cloud", desc: "Azure, AWS e Oracle Cloud: migração, multi-cloud, Kubernetes, segurança e otimização de custos." },
 ];
 
 const team = [
-  { name: "Marco Ribeiro", role: "CEO & Fundador", specialty: "Infraestrutura & Estratégia", initials: "MR", color: "#054579" },
-  { name: "Ana Costa", role: "Diretora de SAP", specialty: "SAP Business One Certified", initials: "AC", color: "#2a78b5" },
-  { name: "Rafael Souza", role: "Head de Segurança", specialty: "Cibersegurança & Compliance", initials: "RS", color: "#03345c" },
-  { name: "Luiza Neves", role: "Tech Lead NOC", specialty: "Zabbix & Grafana", initials: "LN", color: "#1a6aad" },
+  { name: "Marco Ribeiro", role: "CEO & Fundador", specialty: "Estratégia Cloud", initials: "MR", color: "#054579" },
+  { name: "Ana Costa", role: "Arquiteta Cloud", specialty: "Azure & Multi-cloud", initials: "AC", color: "#2a78b5" },
+  { name: "Rafael Souza", role: "Head de Segurança", specialty: "Segurança na Nuvem", initials: "RS", color: "#03345c" },
+  { name: "Luiza Neves", role: "Tech Lead DevOps", specialty: "Kubernetes & Containers", initials: "LN", color: "#1a6aad" },
 ];
 
 export default function SobrePage() {
@@ -49,12 +47,12 @@ export default function SobrePage() {
               </div>
               <div className={styles.heroRight}>
                 <p className={styles.heroDesc}>
-                  A Focus Network é uma empresa especializada em Tecnologia da Informação. Desde 2017 no mercado, visa fornecer as melhores soluções em tecnologia, fazendo seus clientes se tornarem empresas inteligentes. Contamos com uma equipe capacitada, com anos de experiência e variadas certificações profissionais.
+                  A Focus Network está no mercado de tecnologia desde 2017 e hoje é especializada em cloud. Trabalhamos com Azure, AWS e Oracle Cloud e fazemos tudo o que o cliente precisa na nuvem — da migração à operação.
                 </p>
                 <div className={styles.heroStats}>
-                  <div className={styles.heroStat}><strong>+7</strong><span>Anos de mercado</span></div>
-                  <div className={styles.heroStat}><strong>98%</strong><span>Satisfação do cliente</span></div>
-                  <div className={styles.heroStat}><strong>100+</strong><span>Clientes atendidos</span></div>
+                  <div className={styles.heroStat}><strong>2017</strong><span>No mercado</span></div>
+                  <div className={styles.heroStat}><strong>3</strong><span>Nuvens: Azure, AWS e Oracle</span></div>
+                  <div className={styles.heroStat}><strong>24/7</strong><span>Ambientes monitorados</span></div>
                 </div>
               </div>
             </div>
@@ -95,7 +93,7 @@ export default function SobrePage() {
           <div className="container">
             <div className={styles.sectionHeader}>
               <span className={styles.label}>Nossa Jornada</span>
-              <h2>+7 anos construindo excelência em TI</h2>
+              <h2>Da infraestrutura de TI à especialista em nuvem</h2>
             </div>
             <div className={styles.timeline}>
               {milestones.map((m, i) => (

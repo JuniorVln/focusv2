@@ -9,24 +9,24 @@ import { RiEyeLine, RiArrowRightLine } from 'react-icons/ri';
 const posts = [
   {
     id: 1,
-    title: "Cloud Computing: Nuvem Pública, Privada ou Híbrida — Qual escolher?",
-    summary: "Entenda as diferenças entre os modelos de nuvem e como a Focus Network pode ajudar sua empresa a fazer a escolha certa com segurança e economia.",
+    title: "Azure, AWS ou Oracle Cloud: qual nuvem escolher?",
+    summary: "Entenda as diferenças entre as três principais nuvens do mercado e como escolher — ou combinar — a melhor opção para sua empresa.",
     date: "10 Mar, 2025",
     image: "/images/blog_1.png",
     isLarge: true
   },
   {
     id: 2,
-    title: "Por que monitorar sua infraestrutura de TI com Zabbix e Grafana?",
-    summary: "Monitoramento proativo evita paradas, previne ataques e garante disponibilidade. Veja como transformamos indicadores em dashboards gerenciáveis.",
+    title: "Multi-cloud: quando vale a pena usar mais de uma nuvem?",
+    summary: "Flexibilidade, menos dependência de fornecedor e custos equilibrados. Veja quando a arquitetura multi-cloud faz sentido.",
     date: "02 Fev, 2025",
     image: "/images/blog_2.png",
     isLarge: false
   },
   {
     id: 3,
-    title: "SAP Business One: o ERP ideal para empresas em crescimento",
-    summary: "Conheça como o SAP B1, em parceria com a Ramo Sistemas, pode transformar a gestão da sua empresa com eficiência e visibilidade total.",
+    title: "Como reduzir custos na nuvem sem perder desempenho",
+    summary: "Recursos ociosos e ambientes superdimensionados pesam na fatura. Conheça as práticas que mantêm a nuvem enxuta e segura.",
     date: "15 Jan, 2025",
     image: "/images/blog_3.png",
     isLarge: false
@@ -48,9 +48,9 @@ export default function BlogSection() {
             </span>
           </div>
           <div className={styles.headerRight}>
-            <h2 className={styles.title}>Conteúdo especializado em TI para o seu negócio</h2>
+            <h2 className={styles.title}>Conteúdo especializado em cloud para o seu negócio</h2>
             <p className={styles.description}>
-              Fique por dentro das melhores práticas em infraestrutura, segurança, Cloud Computing, SAP Business One e monitoramento NOC.
+              Fique por dentro das melhores práticas em Azure, AWS, Oracle Cloud, multi-cloud, Kubernetes e otimização de custos.
             </p>
           </div>
         </div>

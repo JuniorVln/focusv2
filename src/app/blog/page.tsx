@@ -7,67 +7,67 @@ import styles from "../sobre/page.module.css";
 
 export const metadata: Metadata = {
   title: "Blog — Focus Network",
-  description: "Insights, artigos e novidades sobre infraestrutura de TI, cibersegurança e SAP Business One.",
+  description: "Insights e artigos sobre Azure, AWS, Oracle Cloud, multi-cloud, Kubernetes e otimização de custos na nuvem.",
 };
 
 const posts = [
   {
-    emoji: "🔒",
-    tag: "Segurança",
-    title: "Como proteger seus dados corporativos em 2025",
-    excerpt: "As ameaças cibernéticas evoluem constantemente. Conheça as melhores práticas de segurança para ambientes corporativos modernos.",
+    emoji: "☁️",
+    tag: "Azure",
+    title: "Microsoft Azure: por onde começar a migração",
+    excerpt: "Um roteiro prático para levar servidores e aplicações da sua empresa para o Azure com planejamento e sem sustos.",
     date: "28 Mar 2025",
     readTime: "5 min",
     color: "#EEF0FF",
   },
   {
-    emoji: "📊",
-    tag: "SAP Business One",
-    title: "SAP B1: Como integrar processos e escalar operações",
-    excerpt: "O SAP Business One é a solução ERP ideal para PMEs que precisam de visibilidade e controle sem a complexidade de sistemas enterprise.",
+    emoji: "🟧",
+    tag: "AWS",
+    title: "AWS para empresas: os serviços que mais fazem diferença",
+    excerpt: "Computação, armazenamento, bancos de dados e rede: o que realmente importa na AWS para operações de pequeno e médio porte.",
     date: "20 Mar 2025",
     readTime: "7 min",
-    color: "#F0FFF4",
-  },
-  {
-    emoji: "🖥️",
-    tag: "Infraestrutura",
-    title: "Cloud vs On-Premise: qual é a melhor opção para sua empresa?",
-    excerpt: "A decisão entre cloud e infraestrutura local impacta custo, performance e disponibilidade. Veja como fazer a escolha certa.",
-    date: "12 Mar 2025",
-    readTime: "6 min",
     color: "#FFF7ED",
   },
   {
-    emoji: "📡",
-    tag: "Monitoramento",
-    title: "Zabbix + Grafana: monitoramento proativo na prática",
-    excerpt: "Como estruturar um NOC eficiente usando Zabbix para coleta de dados e Grafana para visualização em tempo real.",
+    emoji: "🔴",
+    tag: "Oracle Cloud",
+    title: "Oracle Cloud: quando ela é a melhor escolha",
+    excerpt: "Cargas de trabalho Oracle, bancos de dados e custo competitivo: entenda em que cenários a OCI se destaca.",
+    date: "12 Mar 2025",
+    readTime: "6 min",
+    color: "#FFF0F0",
+  },
+  {
+    emoji: "📦",
+    tag: "Kubernetes",
+    title: "Kubernetes e containers: escala e portabilidade na prática",
+    excerpt: "Como containers e Kubernetes padronizam aplicações e facilitam rodar o mesmo sistema em nuvens diferentes.",
     date: "5 Mar 2025",
     readTime: "8 min",
     color: "#F0F8FF",
   },
   {
-    emoji: "⚡",
-    tag: "Outsourcing",
-    title: "Quando faz sentido terceirizar o time de TI?",
-    excerpt: "Terceirização de TI pode reduzir custos e aumentar a qualidade do serviço. Mas quando é o momento certo?",
+    emoji: "🔀",
+    tag: "Multi-cloud",
+    title: "Multi-cloud: vale a pena usar mais de uma nuvem?",
+    excerpt: "Flexibilidade, menos dependência de fornecedor e custos equilibrados. Veja quando a arquitetura multi-cloud faz sentido.",
     date: "25 Fev 2025",
     readTime: "4 min",
     color: "#FDF4FF",
   },
   {
-    emoji: "🛡️",
-    tag: "Compliance",
-    title: "LGPD e TI: o que sua empresa precisa saber",
-    excerpt: "A Lei Geral de Proteção de Dados exige mudanças técnicas e processuais. Saiba como adequar sua infraestrutura.",
+    emoji: "💰",
+    tag: "Custos",
+    title: "Como reduzir custos na nuvem sem perder desempenho",
+    excerpt: "Recursos ociosos e ambientes superdimensionados pesam na fatura. Conheça as práticas que mantêm a nuvem enxuta e segura.",
     date: "15 Fev 2025",
     readTime: "6 min",
-    color: "#FFF0F0",
+    color: "#F0FFF4",
   },
 ];
 
-const tags = ["Todos", "Segurança", "SAP Business One", "Infraestrutura", "Monitoramento", "Outsourcing", "Compliance"];
+const tags = ["Todos", "Azure", "AWS", "Oracle Cloud", "Kubernetes", "Multi-cloud", "Custos"];
 
 export default function BlogPage() {
   return (
@@ -82,7 +82,7 @@ export default function BlogPage() {
             </span>
             <h1 className={styles.blogHeroTitle}>Insights & Ideias</h1>
             <p className={styles.blogHeroSub}>
-              Conteúdo técnico de qualidade sobre TI, segurança, SAP e gestão de infraestrutura.
+              Conteúdo técnico de qualidade sobre cloud, migração, segurança e custos na nuvem.
             </p>
             <div className={styles.blogSearch}>
               <input type="text" placeholder="Buscar artigos..." />

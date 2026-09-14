@@ -13,14 +13,14 @@ export default function StatsSection() {
           <div className={styles.badgeWrap}>
             <span className={styles.badgeText}>
               <RiSparklingFill className={styles.badgeIcon} />
-              Nossos Números
+              Por que a Focus
             </span>
           </div>
           <h2 className={styles.mainTitle}>
-            Resultados reais para empresas reais
+            Cloud do zero até a operação
           </h2>
           <p className={styles.mainDesc}>
-            Desde 2017, a Focus Network entrega excelência em TI para empresas de todos os tamanhos — com uma equipe certificada e suporte sem burocracia.
+            Desde 2017 no mercado de tecnologia, a Focus Network hoje concentra sua experiência na nuvem — com atendimento próximo e sem burocracia.
           </p>
         </header>
 
@@ -28,31 +28,31 @@ export default function StatsSection() {
         <div className={styles.bentoGrid}>
           {/* 1. Tall Image Card (Span 2 rows) */}
           <div className={`${styles.card} ${styles.tallImageCard}`}>
-            <img 
-              src="/images/results_wavy.png" 
-              alt="Futuristic wavy background" 
-              className={styles.wavyImage} 
+            <img
+              src="/images/results_wavy.png"
+              alt="Futuristic wavy background"
+              className={styles.wavyImage}
             />
           </div>
 
-          {/* 2. Wide Satisfaction Card (Span 2 columns) */}
+          {/* 2. Wide Card (Span 2 columns) */}
           <div className={`${styles.card} ${styles.wideCard}`}>
             <div>
-              <div className={styles.statNum}>98%</div>
-              <div className={styles.statLabel}>Satisfação do Cliente</div>
+              <div className={styles.statNum}>3</div>
+              <div className={styles.statLabel}>Nuvens em um só parceiro</div>
             </div>
             <p className={styles.statDesc}>
-              Nível de satisfação através de transparência, pontualidade e colaboração — garantindo resultados mensuráveis.
+              Azure, AWS e Oracle Cloud com a mesma equipe — você não precisa de um fornecedor para cada nuvem.
             </p>
           </div>
 
           {/* 3. Efficiency Card */}
           <div className={`${styles.card} ${styles.efficiencyCard}`}>
             <div className={styles.statNum}>24/7</div>
-            <div className={styles.statLabel}>Monitoramento NOC</div>
+            <div className={styles.statLabel}>Ambiente monitorado</div>
             <RiArrowRightUpLine className={styles.upArrow} />
             <p className={styles.statDesc}>
-              Infraestrutura monitorada 24 horas por dia com Zabbix e Grafana — alertas em tempo real antes de impactar sua operação.
+              Segurança, monitoramento e otimização de custos acompanhando o ambiente depois da migração.
             </p>
           </div>
 
@@ -61,24 +61,24 @@ export default function StatsSection() {
             <div className={styles.statNum}>2017</div>
             <div className={styles.statLabel}>No Mercado</div>
             <p className={styles.statDesc}>
-              Mais de 7 anos entregando soluções de TI com excelência e certificações profissionais reconhecidas.
+              Anos de experiência em infraestrutura de TI, agora com foco total em cloud.
             </p>
           </div>
 
-          {/* 5. Partners Card (Wide Dark Card) */}
+          {/* 5. Clouds Card (Wide Dark Card) */}
           <div className={`${styles.card} ${styles.partnersCard}`}>
             <div className={styles.logoRow}>
-              <div style={{ fontSize: '18px', fontWeight: 700, letterSpacing: '0.05em' }}>FORTINET</div>
-              <div style={{ fontSize: '18px', fontWeight: 700, letterSpacing: '0.05em' }}>BITDEFENDER</div>
-              <div style={{ fontSize: '18px', fontWeight: 700, letterSpacing: '0.05em' }}>SKYMAIL</div>
-              <div style={{ fontSize: '18px', fontWeight: 700, letterSpacing: '0.05em' }}>APC</div>
+              <div style={{ fontSize: '18px', fontWeight: 700, letterSpacing: '0.05em' }}>AZURE</div>
+              <div style={{ fontSize: '18px', fontWeight: 700, letterSpacing: '0.05em' }}>AWS</div>
+              <div style={{ fontSize: '18px', fontWeight: 700, letterSpacing: '0.05em' }}>ORACLE CLOUD</div>
+              <div style={{ fontSize: '18px', fontWeight: 700, letterSpacing: '0.05em' }}>KUBERNETES</div>
             </div>
             <div>
-              <div className={styles.statNum}>100+</div>
-              <div className={styles.statLabel}>Clientes Atendidos</div>
+              <div className={styles.statNum}>Multi</div>
+              <div className={styles.statLabel}>Arquitetura multi-cloud</div>
             </div>
             <p className={styles.statDesc}>
-              Parceiros líderes de mercado como Fortinet, Bitdefender, Skymail e APC — garantindo as melhores soluções para sua empresa.
+              Combinamos as nuvens certas para cada necessidade, com containers e Kubernetes quando fizer sentido.
             </p>
           </div>
         </div>

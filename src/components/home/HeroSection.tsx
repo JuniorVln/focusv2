@@ -7,9 +7,9 @@ const avatarColors = ["#054579", "#2a78b5", "#03345c", "#1a6aad"];
 const avatarInitials = ["M", "A", "R", "L"];
 
 const stats = [
-  { value: "98%", label: "Satisfação do Cliente" },
-  { value: "3X", label: "Decisões mais Rápidas" },
-  { value: "40%", label: "Redução de Custos", accent: true },
+  { value: "Azure", label: "Microsoft Azure" },
+  { value: "AWS", label: "Amazon Web Services" },
+  { value: "Oracle", label: "Oracle Cloud", accent: true },
 ];
 
 export default function HeroSection() {
@@ -49,19 +49,19 @@ export default function HeroSection() {
             </div>
             <div className={styles.teamMeta}>
               <span className={styles.teamLabel}>Nossa Equipe</span>
-              <span className={styles.teamSince}>Desde 2017 · Infraestrutura & ERP</span>
+              <span className={styles.teamSince}>Desde 2017 · Especialistas em Cloud</span>
             </div>
           </div>
 
           {/* Headline */}
           <h1 className={styles.headline}>
-            Soluções em Tecnologia<br />
-            para o <span>Tamanho do seu Negócio</span>
+            Tudo o que sua empresa<br />
+            precisa <span>na Nuvem</span>
           </h1>
 
           {/* Subtitle */}
           <p className={styles.subtitle}>
-            Desde 2017 a Focus Network fornece as melhores soluções em tecnologia, fazendo seus clientes se tornarem empresas inteligentes. Cloud, SAP Business One, NOC e Segurança em TI.
+            Trabalhamos com Azure, AWS e Oracle Cloud. Migração, arquitetura multi-cloud, segurança, monitoramento e otimização de custos — do zero até a operação.
           </p>
 
           {/* CTAs */}

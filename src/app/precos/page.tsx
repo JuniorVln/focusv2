@@ -7,29 +7,29 @@ import styles from "../sobre/page.module.css";
 
 export const metadata: Metadata = {
   title: "Preços — Focus Network",
-  description: "Planos transparentes para infraestrutura de TI, segurança e SAP Business One. Escolha o plano ideal para sua empresa.",
+  description: "Formatos de contratação para migração, gestão e arquitetura multi-cloud em Azure, AWS e Oracle Cloud.",
 };
 
 const faqs = [
   {
-    q: "Os preços incluem suporte técnico?",
-    a: "Sim. Todos os planos incluem suporte técnico com SLA definido. O tempo de resposta varia conforme o plano (4h, 2h ou 1h útil)."
+    q: "Por que os valores são sob consulta?",
+    a: "Cada ambiente tem tamanho, nuvem e necessidades diferentes. Por isso montamos a proposta a partir do diagnóstico da sua empresa."
   },
   {
-    q: "Posso mudar de plano depois?",
-    a: "Sim. Você pode fazer upgrade ou downgrade a qualquer momento. A cobrança é ajustada proporcionalmente no próximo ciclo."
+    q: "O custo da nuvem (Azure, AWS, Oracle) está incluído?",
+    a: "O consumo da nuvem é cobrado pelo próprio provedor. Nosso trabalho é planejar, migrar, gerir e otimizar esse ambiente para você pagar só pelo que usa."
   },
   {
-    q: "O que está incluído no plano SAP B1?",
-    a: "O plano SAP B1 é personalizado conforme a complexidade da sua operação. Inclui implementação, customizações, treinamento e suporte contínuo."
+    q: "Posso começar pela migração e depois contratar a gestão?",
+    a: "Sim. Muitas empresas começam pela migração e seguem com a gestão contínua do ambiente depois que ele está em operação."
   },
   {
-    q: "Há contrato de fidelidade?",
-    a: "Temos contratos de 12 meses com desconto, mas também oferecemos planos mensais sem fidelidade."
+    q: "Vocês atendem empresas que já estão na nuvem?",
+    a: "Sim. Assumimos ambientes existentes, revisamos segurança e custos e passamos a cuidar da operação no dia a dia."
   },
   {
-    q: "Como funciona o onboarding?",
-    a: "Após a contratação, nossa equipe realiza um diagnóstico completo do ambiente em até 5 dias úteis e apresenta o plano de implementação."
+    q: "Como funciona o início do projeto?",
+    a: "Começamos com um diagnóstico do ambiente atual e apresentamos o plano de trabalho antes de qualquer mudança."
   },
   {
     q: "Vocês atendem fora de Curitiba?",
@@ -47,10 +47,10 @@ export default function PrecosPage() {
           <div className="container">
             <span className={styles.label}>Planos & Preços</span>
             <h1 style={{ fontSize: "clamp(32px, 4.5vw, 56px)", fontWeight: 800, letterSpacing: "-0.03em", marginTop: 16, marginBottom: 16, color: "var(--text-primary)" }}>
-              Preços transparentes, sem surpresas
+              Um formato para cada momento na nuvem
             </h1>
             <p style={{ fontSize: 18, color: "var(--text-body)", maxWidth: 540, margin: "0 auto" }}>
-              Escolha o plano ideal para sua empresa. Upgrade ou cancelamento a qualquer momento.
+              Migração, gestão ou multi-cloud. A proposta é montada a partir do diagnóstico da sua empresa.
             </p>
           </div>
         </section>

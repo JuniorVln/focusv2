@@ -18,7 +18,7 @@ export default function FeaturesSection() {
             </span>
           </div>
           <h2 className={styles.mainTitle}>
-            A Focus Network possui os serviços certos para a sua empresa
+            Fazemos tudo o que sua empresa precisa na nuvem
           </h2>
         </header>
 
@@ -27,7 +27,7 @@ export default function FeaturesSection() {
           {/* Col 1: Texto de Introdução */}
           <div className={styles.introCol}>
             <p className={styles.introText}>
-              Cloud Computing, SAP Business One, NOC com Zabbix & Grafana, UTM Firewall, Segurança em TI e E-mail Corporativo. Soluções completas para sua empresa crescer com segurança.
+              Azure, AWS e Oracle Cloud. Da migração à arquitetura multi-cloud, com segurança, monitoramento e otimização de custos — do zero até a operação.
             </p>
           </div>
 
@@ -35,18 +35,18 @@ export default function FeaturesSection() {
           <div className={styles.glassCard}>
             <div className={styles.illustArea}>
               <div style={{ display: 'flex', flexDirection: 'column', width: '100%', gap: '8px' }}>
-                <div className={styles.chatBubble} style={{ background: '#f1f5f9' }}>☁️ Nuvem Pública (AWS / Azure / GCP)</div>
-                <div className={`${styles.chatBubble} ${styles.bubbleRight}`}>✔ Migração concluída</div>
+                <div className={styles.chatBubble} style={{ background: '#f1f5f9' }}>☁️ Microsoft Azure</div>
+                <div className={`${styles.chatBubble} ${styles.bubbleRight}`}>☁️ Amazon Web Services</div>
                 <div className={styles.chatBubble} style={{ borderRadius: '18px', width: 'fit-content' }}>
                   Oracle Cloud <span style={{ color: '#22C55E' }}>Online</span>
                 </div>
-                <div className={styles.chatBubble} style={{ opacity: 0.7 }}>Backup e armazenamento ativo</div>
+                <div className={styles.chatBubble} style={{ opacity: 0.7 }}>Um parceiro para as três nuvens</div>
               </div>
               <div className={styles.chatOrb} />
             </div>
-            <h3 className={styles.cardTitle}>Cloud Computing</h3>
+            <h3 className={styles.cardTitle}>Azure, AWS e Oracle Cloud</h3>
             <p className={styles.cardDesc}>
-              Infraestrutura em nuvem com AWS, Azure, GCP e Oracle Cloud. Nuvem pública, privada ou híbrida para hospedagem de ERP, servidores e aplicativos.
+              Trabalhamos com as três principais nuvens do mercado e ajudamos sua empresa a escolher, combinar e operar a melhor opção para cada carga de trabalho.
             </p>
           </div>
 
@@ -72,9 +72,9 @@ export default function FeaturesSection() {
                 }} />
               </div>
             </div>
-            <h3 className={styles.cardTitle}>SAP Business One (ERP)</h3>
+            <h3 className={styles.cardTitle}>Migração e Gestão de Ambientes</h3>
             <p className={styles.cardDesc}>
-              Em parceria com a Ramo Sistemas, entregamos o melhor ERP do mercado para empresas em crescimento — do diagnóstico ao suporte contínuo.
+              Levamos servidores, sistemas e aplicações para a nuvem com planejamento, e seguimos cuidando do ambiente depois da migração.
             </p>
           </div>
         </div>
@@ -86,14 +86,14 @@ export default function FeaturesSection() {
             <div className={styles.illustArea}>
               <div className={styles.insightsContainer}>
                 <div className={styles.comparisonBox}>
-                  <div style={{ fontWeight: 'bold', color: '#64748B', marginBottom: '6px' }}>Comparison</div>
+                  <div style={{ fontWeight: 'bold', color: '#64748B', marginBottom: '6px' }}>Custo cloud</div>
                   <div style={{ display: 'flex', justifyContent: 'space-between', color: '#054579', marginBottom: '4px' }}>
-                    <span>Nov 24</span>
-                    <span>$3.642</span>
+                    <span>Otimizado</span>
+                    <span>▼</span>
                   </div>
                   <div style={{ display: 'flex', justifyContent: 'space-between', color: '#94A3B8' }}>
-                    <span>Nov 23</span>
-                    <span>$1.937</span>
+                    <span>Antes</span>
+                    <span>▲</span>
                   </div>
                 </div>
                 <div className={styles.graphLines}>
@@ -117,9 +117,9 @@ export default function FeaturesSection() {
                 </div>
               </div>
             </div>
-            <h3 className={styles.cardTitle}>Monitoramento com Zabbix & Grafana</h3>
+            <h3 className={styles.cardTitle}>Monitoramento e Otimização de Custos</h3>
             <p className={styles.cardDesc}>
-              Transformamos indicadores em Dashboards gerenciáveis. Monitoramento 24/7 com alertas em tempo real para servidores, redes, links e muito mais.
+              Acompanhamos desempenho e consumo do seu ambiente para evitar paradas e cortar gastos desnecessários na nuvem.
             </p>
           </div>
 
@@ -148,9 +148,9 @@ export default function FeaturesSection() {
                 </div>
               </div>
             </div>
-            <h3 className={styles.cardTitle}>Segurança em TI & LGPD</h3>
+            <h3 className={styles.cardTitle}>Segurança na Nuvem</h3>
             <p className={styles.cardDesc}>
-              Consultoria completa em segurança dos computadores, sistemas e servidores da sua empresa — alinhada com as normas da LGPD e principais regulamentações.
+              Controle de acessos, proteção de dados e boas práticas de segurança aplicadas a cada ambiente em Azure, AWS e Oracle Cloud.
             </p>
           </div>
 
@@ -169,21 +169,21 @@ export default function FeaturesSection() {
               <div className={styles.outsourcingIllust}>
                 <div className={styles.slaBadge} style={{ fontSize: '18px', padding: '10px 18px' }}>
                   <RiShieldCheckFill style={{ fontSize: '24px' }} />
-                  SLA 99.9%
+                  Multi-cloud
                 </div>
                 <div className={styles.criticalTask} style={{ width: '90%' }}>
-                  <span>Monitoramento</span>
+                  <span>Kubernetes</span>
                   <div className={styles.statusDot} />
                 </div>
                 <div className={styles.criticalTask} style={{ width: '90%' }}>
-                  <span>Backup Crítico</span>
+                  <span>Containers</span>
                   <div className={styles.statusDot} />
                 </div>
               </div>
             </div>
-            <h3 className={styles.cardTitle}>Outsourcing de TI</h3>
+            <h3 className={styles.cardTitle}>Multi-cloud, Kubernetes & Containers</h3>
             <p className={styles.cardDesc}>
-              Outsourcing de TI com SLA rigoroso e equipe certificada de missão crítica.
+              Arquiteturas que combinam nuvens e aplicações em containers, com escala e portabilidade.
             </p>
           </div>
 
@@ -209,7 +209,7 @@ export default function FeaturesSection() {
             </div>
             <h3 className={styles.cardTitle}>Fale com um Especialista</h3>
             <p className={styles.cardDesc}>
-              Atendimento sem robôs. Nossa equipe certificada está disponível para resolver os desafios tecnológicos da sua empresa.
+              Atendimento sem robôs. Conte o que sua empresa precisa na nuvem e nossa equipe mostra o caminho.
             </p>
             <div className={styles.exploreLink}>
               Entrar em contato

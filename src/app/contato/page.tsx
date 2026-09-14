@@ -5,7 +5,7 @@ import styles from "../sobre/page.module.css";
 
 export const metadata: Metadata = {
   title: "Contato — Focus Network",
-  description: "Fale com o time técnico da Focus Network. Consultoria em TI, SAP B1 e segurança para sua empresa.",
+  description: "Fale com o time técnico da Focus Network. Azure, AWS, Oracle Cloud e tudo o que sua empresa precisa na nuvem.",
 };
 
 const contactItems = [
@@ -75,11 +75,12 @@ export default function ContatoPage() {
                   <label htmlFor="service">Serviço de interesse</label>
                   <select id="service">
                     <option value="">Selecione um serviço...</option>
-                    <option value="infra">Infraestrutura de TI</option>
-                    <option value="security">Segurança & Compliance</option>
-                    <option value="sap">SAP Business One (ERP)</option>
-                    <option value="noc">NOC (Zabbix & Grafana)</option>
-                    <option value="outsourcing">Outsourcing de TI</option>
+                    <option value="azure">Microsoft Azure</option>
+                    <option value="aws">AWS</option>
+                    <option value="oracle">Oracle Cloud</option>
+                    <option value="migracao">Migração e gestão de ambientes</option>
+                    <option value="multicloud">Multi-cloud, Kubernetes & Containers</option>
+                    <option value="custos">Segurança, monitoramento e custos</option>
                   </select>
                 </div>
                 <div className={styles.formGroup}>

@@ -9,13 +9,13 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Focus Network — Soluções em Tecnologia",
+  title: "Focus Network — Tudo o que sua empresa precisa na nuvem",
   description:
-    "Transformamos infraestrutura em inteligência. Consultoria, segurança e implementação SAP Business One para empresas que precisam escalar sem gargalos técnicos.",
+    "Azure, AWS e Oracle Cloud: migração e gestão de ambientes, arquitetura multi-cloud, Kubernetes, segurança, monitoramento e otimização de custos.",
   openGraph: {
     title: "Focus Network",
     description:
-      "Expertise em Cloud, Segurança e Suporte de TI para empresas.",
+      "Azure, AWS e Oracle Cloud — tudo que envolve cloud, do zero até a operação.",
     type: "website",
   },
 };

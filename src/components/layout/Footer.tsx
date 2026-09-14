@@ -11,11 +11,11 @@ const navLinks = [
 ];
 
 const services = [
-  "Infraestrutura de TI",
-  "Segurança & Compliance",
-  "SAP Business One (ERP)",
-  "NOC (Zabbix & Grafana)",
-  "Outsourcing de TI",
+  "Microsoft Azure",
+  "AWS",
+  "Oracle Cloud",
+  "Migração e Multi-cloud",
+  "Kubernetes & Containers",
 ];
 
 export default function Footer() {
@@ -34,7 +34,7 @@ export default function Footer() {
               <span className={styles.logoText}>FOCUS NETWORK</span>
             </div>
             <p className={styles.footerDesc}>
-              Desde 2017 fornecemos as melhores soluções em TI: Cloud Computing, SAP Business One, NOC com Zabbix &amp; Grafana, Segurança e Outsourcing. Curitiba – PR.
+              Tudo o que sua empresa precisa na nuvem: Azure, AWS e Oracle Cloud, da migração à operação. Desde 2017 · Curitiba – PR.
             </p>
             <div className={styles.socialLinks}>
               <a href="#" className={styles.socialLink} aria-label="LinkedIn">in</a>

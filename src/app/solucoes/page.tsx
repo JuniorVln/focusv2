@@ -7,74 +7,87 @@ import styles from "./page.module.css";
 export const metadata: Metadata = {
   title: "Nossas Soluções | Focus Network",
   description:
-    "Soluções completas em TI: Cibersegurança, Infraestrutura, Consultoria SAP B1 e Suporte especializado para sua empresa escalar com segurança.",
+    "Azure, AWS e Oracle Cloud: migração e gestão de ambientes, arquitetura multi-cloud, Kubernetes & containers, segurança, monitoramento e otimização de custos.",
 };
 
 const solutions = [
   {
+    emoji: "☁️",
+    title: "Microsoft Azure",
+    desc: "Levamos e mantemos o ambiente da sua empresa no Azure, integrado às ferramentas Microsoft que sua equipe já usa no dia a dia.",
+    features: [
+      "Migração de servidores e aplicações",
+      "Desenho da arquitetura no Azure",
+      "Gestão contínua do ambiente",
+      "Segurança e controle de acessos",
+      "Acompanhamento de consumo e custos",
+    ],
+    reversed: false,
+  },
+  {
+    emoji: "🟧",
+    title: "AWS — Amazon Web Services",
+    desc: "Estruturamos seu ambiente na AWS com os serviços certos para cada necessidade, do primeiro servidor à operação completa.",
+    features: [
+      "Migração para a AWS",
+      "Computação, armazenamento e bancos de dados",
+      "Rede e conectividade",
+      "Segurança e monitoramento",
+      "Otimização da fatura",
+    ],
+    reversed: true,
+  },
+  {
+    emoji: "🔴",
+    title: "Oracle Cloud",
+    desc: "Ambientes na Oracle Cloud (OCI) para empresas que buscam desempenho e custo competitivo, especialmente em cargas de trabalho e bancos de dados Oracle.",
+    features: [
+      "Migração para a OCI",
+      "Bancos de dados e sistemas Oracle",
+      "Arquitetura e gestão do ambiente",
+      "Segurança e monitoramento",
+      "Controle de custos",
+    ],
+    reversed: false,
+  },
+  {
+    emoji: "📦",
+    title: "Kubernetes & Containers",
+    desc: "Organizamos suas aplicações em containers e ambientes Kubernetes para ganhar escala, padronização e liberdade para rodar em qualquer nuvem.",
+    features: [
+      "Containerização de aplicações",
+      "Clusters Kubernetes gerenciados",
+      "Escalabilidade automática",
+      "Portabilidade entre nuvens",
+      "Monitoramento dos serviços",
+    ],
+    reversed: true,
+  },
+  {
+    emoji: "🔀",
+    title: "Multi-cloud",
+    desc: "Combinamos Azure, AWS e Oracle Cloud de forma integrada, aproveitando o melhor de cada nuvem e evitando dependência de um único fornecedor.",
+    features: [
+      "Arquitetura multi-cloud",
+      "Integração entre ambientes",
+      "Distribuição inteligente de cargas",
+      "Governança centralizada",
+      "Equilíbrio de custos entre nuvens",
+    ],
+    reversed: false,
+  },
+  {
     emoji: "🚀",
-    title: "Infraestrutura & Cloud",
-    desc: "Desenhamos e mantemos arquiteturas de alta disponibilidade para sua empresa. Seja on-premise, nuvem híbrida ou multi-cloud, garantimos que sua operação nunca pare.",
+    title: "Tudo o que sua empresa precisa na nuvem",
+    desc: "Do zero até a operação: migração e gestão de ambientes, segurança, monitoramento e otimização de custos em um só parceiro.",
     features: [
-      "Migração e gestão de Cloud (AWS, Azure, GCP)",
-      "Virtualização de servidores e storage",
-      "Backup em nuvem e Disaster Recovery",
-      "Redes e conectividade de alta performance",
-      "Manutenção preventiva de hardware",
-    ],
-    reversed: false,
-  },
-  {
-    emoji: "🔒",
-    title: "Segurança & Compliance",
-    desc: "Protegemos seu ambiente contra ameaças modernas com uma abordagem proativa e multicamada. Nossa equipe certificada garante conformidade com as principais regulamentações nacionais e internacionais.",
-    features: [
-      "Análise e gestão de vulnerabilidades",
-      "SIEM e resposta a incidentes",
-      "Adequação à LGPD e ISO 27001",
-      "Firewall e controle de acessos",
-      "Treinamento de conscientização",
+      "Diagnóstico do ambiente atual",
+      "Planejamento e migração",
+      "Gestão contínua dos ambientes",
+      "Segurança e monitoramento",
+      "Otimização de custos",
     ],
     reversed: true,
-  },
-  {
-    emoji: "📊",
-    title: "SAP Business One (ERP)",
-    desc: "Somos especialistas na implementação e suporte do SAP Business One para médias e grandes empresas. Integramos o ERP com os processos da sua operação para maximizar eficiência e visibilidade gerencial.",
-    features: [
-      "Implementação e configuração do SAP B1",
-      "Customizações e add-ons específicos",
-      "Integração com outros sistemas",
-      "Migração de dados e legados",
-      "Treinamento e suporte contínuo",
-    ],
-    reversed: false,
-  },
-  {
-    emoji: "📡",
-    title: "NOC — Centro de Operações de Rede",
-    desc: "Monitoramos seu ambiente de TI 24 horas por dia, 7 dias por semana, com Zabbix e Grafana. Identificamos e resolvemos problemas antes que afetem a operação da sua empresa.",
-    features: [
-      "Monitoramento 24/7 com Zabbix",
-      "Dashboards em tempo real com Grafana",
-      "Alertas proativos e automação",
-      "Relatórios de disponibilidade",
-      "SLA com tempos de resposta garantidos",
-    ],
-    reversed: true,
-  },
-  {
-    emoji: "🤝",
-    title: "Outsourcing de TI",
-    desc: "Assuma o controle da sua TI sem contratar e gerenciar uma equipe interna. Fornecemos profissionais certificados que atuam como extensão do seu negócio, com SLA rigoroso e foco em resultado.",
-    features: [
-      "Gestão completa da TI",
-      "Equipe certificada dedicada",
-      "Suporte N1, N2 e N3",
-      "SLA de resposta garantido",
-      "Relatórios mensais de performance",
-    ],
-    reversed: false,
   },
 ];
 
@@ -91,13 +104,13 @@ export default function SolucoesPage() {
               Conheça nossas Soluções
             </span>
             <h1 className={styles.solutionsHeroTitle}>
-              Tecnologia de ponta para empresas que <span style={{ color: "var(--primary-light)" }}>não aceitam parar</span>.
+              Tudo o que sua empresa precisa <span style={{ color: "var(--primary-light)" }}>na nuvem</span>.
             </h1>
             <p className={styles.solutionsHeroSub}>
-              Da infraestrutura à segurança, do ERP ao outsourcing. Somos o braço tecnológico que impulsiona o crescimento do seu negócio com estabilidade e visão estratégica.
+              Trabalhamos com Azure, AWS e Oracle Cloud. Migração, arquitetura multi-cloud, segurança, monitoramento e otimização de custos — do zero até a operação.
             </p>
             <div className={styles.solutionsBadges}>
-              {["Cloud & Infra", "Cyber Security", "SAP Business One", "NOC / SOC 24x7", "Support N1-N3"].map((badge) => (
+              {["Azure", "AWS", "Oracle Cloud", "Kubernetes", "Multi-cloud"].map((badge) => (
                 <span key={badge} className={styles.solutionsBadge}>{badge}</span>
               ))}
             </div>

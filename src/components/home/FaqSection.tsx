@@ -6,28 +6,28 @@ import { RiCustomerService2Fill, RiArrowRightUpLine, RiArrowDownSLine, RiArrowUp
 
 const faqData = [
   {
-    question: "Quem deve migrar para Cloud Computing?",
-    answer: "Toda empresa deve migrar para Cloud Computing, ao menos algum tipo de serviço. Links de internet e custo do Cloud têm ficado cada vez mais atrativos. A Focus Network oferece nuvem pública (AWS, Azure, GCP, Oracle Cloud), privada e híbrida, além de Datacenter próprio no Brasil sem dependência do câmbio."
+    question: "Com quais nuvens a Focus Network trabalha?",
+    answer: "Trabalhamos com Microsoft Azure, Amazon Web Services (AWS) e Oracle Cloud. Ajudamos a escolher a melhor opção para cada necessidade — ou a combinar mais de uma."
   },
   {
-    question: "O monitoramento com Zabbix e Grafana funciona 24x7?",
-    answer: "Sim. Nossa ferramenta monitora e envia alertas 24 horas por dia, 7 dias por semana. Dependendo do contrato, os alertas são tratados imediatamente ou no próximo dia útil. Monitoramos computadores, servidores, impressoras, roteadores, switches, links de internet, sites e muito mais."
+    question: "Minha empresa ainda não usa nuvem. Por onde começamos?",
+    answer: "Começamos pelo diagnóstico do seu ambiente atual. A partir dele, definimos o que migrar, para qual nuvem e em que ordem — do zero até a operação."
   },
   {
-    question: "Vocês realizam implementação completa do SAP Business One?",
-    answer: "Sim. A Focus Network em parceria com a Ramo Sistemas entrega o que há de melhor em ERP no mercado. Atendemos desde o diagnóstico de processos e configuração inicial até migração de dados, customizações e treinamento das equipes."
+    question: "A migração para a nuvem para a minha operação?",
+    answer: "A migração é planejada por etapas justamente para reduzir o impacto no dia a dia. Cada passo é combinado com a sua equipe antes de ser executado."
   },
   {
-    question: "O que é UTM Firewall e por que minha empresa precisa?",
-    answer: "UTM (Unified Threat Management) é uma solução de segurança completa em um único dispositivo. A Focus Network trabalha com as principais marcas do mercado: Fortinet, Sophos e Pfsense, protegendo toda a sua rede corporativa."
+    question: "O que é arquitetura multi-cloud?",
+    answer: "É usar mais de uma nuvem de forma integrada, aproveitando o melhor de cada uma. Isso traz mais flexibilidade, evita dependência de um único fornecedor e ajuda a equilibrar custos."
   },
   {
-    question: "A Focus Network ajuda com a adequação à LGPD?",
-    answer: "Com certeza. Nossa equipe efetua consultoria completa em segurança dos computadores, sistemas e servidores da sua empresa, tudo alinhado com as novas normas da LGPD e principais regulamentações de mercado."
+    question: "Vocês trabalham com Kubernetes e containers?",
+    answer: "Sim. Estruturamos aplicações em containers e ambientes Kubernetes para ganhar escala, padronização e portabilidade entre nuvens."
   },
   {
-    question: "A implantação do monitoramento é complexa?",
-    answer: "Somos especialistas nas ferramentas Zabbix e Grafana e desenvolvemos uma forma de trabalho otimizada onde entregamos projetos de forma simples. Treinamos a equipe de TI local caso o cliente possua. E o melhor: utilizamos ferramentas OpenSource, sem custos de licenciamento."
+    question: "Como vocês ajudam a reduzir os custos da nuvem?",
+    answer: "Acompanhamos o consumo do ambiente, identificamos recursos ociosos ou superdimensionados e ajustamos a arquitetura para sua empresa pagar só pelo que usa — sem abrir mão de segurança e monitoramento."
   },
   {
     question: "Vocês atendem minha empresa em todo o Brasil?",
@@ -54,7 +54,7 @@ export default function FaqSection() {
             </div>
             <h2 className={styles.title}>Respostas para Perguntas Comuns</h2>
             <p className={styles.subtitle}>
-              Reunimos as dúvidas mais frequentes para ajudar você a entender melhor nossos serviços de TI, infraestrutura e processos de integração.
+              Reunimos as dúvidas mais frequentes para ajudar você a entender melhor nossos serviços de cloud, migração e operação na nuvem.
             </p>
 
             {/* Support Card Inspiration from screenshot */}

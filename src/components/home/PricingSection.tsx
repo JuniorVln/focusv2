@@ -5,48 +5,46 @@ import styles from "./PricingSection.module.css";
 
 const plans = [
   {
-    name: "TI & Infra",
-    monthlyPrice: 239,
-    desc: "Ideal para empresas que precisam de infraestrutura gerenciada e suporte técnico especializado.",
+    name: "Migração",
+    monthlyPrice: null,
+    desc: "Para empresas que vão levar servidores e aplicações para a nuvem pela primeira vez.",
     features: [
-      "Gerenciamento de infraestrutura",
-      "Suporte N1, N2 e N3",
-      "Monitoramento básico (Zabbix)",
-      "SLA de 4 horas úteis",
-      "Relatórios mensais",
+      "Diagnóstico do ambiente atual",
+      "Escolha da nuvem: Azure, AWS ou Oracle",
+      "Planejamento por etapas",
+      "Migração acompanhada",
+      "Entrega do ambiente em operação",
     ],
     cta: "Fale com um Especialista",
     ctaStyle: "dark",
     popular: false,
   },
   {
-    name: "Cibersegurança",
-    monthlyPrice: 479,
-    desc: "Para empresas que precisam de proteção ativa, compliance e monitoramento contínuo de ameaças.",
+    name: "Gestão Cloud",
+    monthlyPrice: null,
+    desc: "Para empresas que já estão na nuvem e querem o ambiente cuidado no dia a dia.",
     features: [
-      "Tudo do plano TI & Infra",
-      "Análise de vulnerabilidades",
-      "SIEM e resposta a incidentes",
-      "Relatórios de compliance",
-      "SLA de 2 horas úteis",
-      "NOC 24/7 com Grafana",
+      "Gestão contínua do ambiente",
+      "Segurança e controle de acessos",
+      "Monitoramento",
+      "Otimização de custos",
+      "Relatórios periódicos",
     ],
     cta: "Fale com um Especialista",
     ctaStyle: "white",
     popular: true,
-    badge: "Popular",
+    badge: "Mais procurado",
   },
   {
-    name: "Gestão (SAP B1)",
+    name: "Multi-cloud",
     monthlyPrice: null,
-    desc: "Implementação e suporte completo ao SAP Business One para operações de médio e grande porte.",
+    desc: "Para operações que combinam nuvens, containers e Kubernetes.",
     features: [
-      "Tudo do plano Cibersegurança",
-      "Implementação do SAP B1",
-      "Customizações e integrações",
-      "Treinamento da equipe",
-      "Gerente de conta dedicado",
-      "SLA de 1 hora útil",
+      "Tudo do plano Gestão Cloud",
+      "Arquitetura multi-cloud",
+      "Kubernetes & containers",
+      "Integração entre ambientes",
+      "Governança centralizada",
     ],
     cta: "Fale com um Especialista",
     ctaStyle: "dark",
@@ -67,12 +65,12 @@ export default function PricingSection() {
       <div className="container">
         <div className={styles.header}>
           <span className={styles.label}>Planos</span>
-          <h2 className={styles.title}>Preços transparentes, sem surpresas</h2>
-          <p className={styles.subtitle}>Escolha o plano ideal para o nível de suporte que sua empresa precisa.</p>
+          <h2 className={styles.title}>Um formato para cada momento na nuvem</h2>
+          <p className={styles.subtitle}>Cada ambiente é diferente. Montamos a proposta a partir do diagnóstico da sua empresa.</p>
         </div>
 
         {/* Toggle */}
-        <div style={{ textAlign: "center", marginBottom: 52 }}>
+        <div hidden={plans.every((p) => !p.monthlyPrice)} style={{ textAlign: "center", marginBottom: 52 }}>
           <div className={styles.toggle}>
             <button
               className={`${styles.toggleBtn} ${!yearly ? styles.active : ""}`}
@@ -118,7 +116,7 @@ export default function PricingSection() {
                   {plan.cta}
                 </a>
                 <span className={styles.featuresLabel}>
-                  {plan.popular ? "Inclui todos os recursos de TI & Infra:" : "Inclui:"}
+                  Inclui:
                 </span>
                 <ul className={styles.featureList}>
                   {plan.features.map((f) => (

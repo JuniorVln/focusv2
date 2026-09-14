@@ -16,7 +16,7 @@ const TestimonialsSection = () => {
           </div>
           <h2 className={styles.title}>O que nossos clientes dizem</h2>
           <p className={styles.subtitle}>
-            Empresas de diferentes segmentos confiam na Focus Network para manter sua infraestrutura segura, estável e sempre disponível.
+            Empresas de diferentes segmentos confiam na Focus Network para levar e manter seus ambientes na nuvem.
           </p>
         </header>
 
@@ -31,7 +31,7 @@ const TestimonialsSection = () => {
           <div className={`${styles.card} ${styles.metricCardLight}`}>
             <span className={styles.quoteIcon}>{'\u201C'}</span>
             <p className={styles.quoteText}>
-              A Focus Network implementou o monitoramento com Zabbix e Grafana e passamos a identificar falhas antes mesmo que impactassem nossos usuários. A tranquilidade operacional que isso gerou não tem preço.
+              Com o ambiente na nuvem monitorado pela Focus Network, passamos a identificar falhas antes mesmo que impactassem nossos usuários. A tranquilidade operacional que isso gerou não tem preço.
             </p>
             <div className={styles.author}>
               <img src="/images/avatar_1.png" alt="Ricardo Almeida" className={styles.avatar} />
@@ -46,8 +46,8 @@ const TestimonialsSection = () => {
                 <div className={styles.metricLabel}>Monitoramento contínuo</div>
               </div>
               <div className={styles.metricItem}>
-                <div className={styles.metricNum}>98%</div>
-                <div className={styles.metricLabel}>Satisfação do cliente</div>
+                <div className={styles.metricNum}>AWS</div>
+                <div className={styles.metricLabel}>Ambiente gerenciado</div>
               </div>
             </div>
           </div>
@@ -56,7 +56,7 @@ const TestimonialsSection = () => {
           <div className={`${styles.card} ${styles.blueCard}`}>
             <span className={styles.quoteIconWhite}>{'\u201C'}</span>
             <p className={styles.quoteTextWhite}>
-              Com a implementação do SAP Business One pela Focus Network, ganhamos visibilidade total da nossa operação. O atendimento deles é diferenciado — sem robôs, sempre humano e ágil.
+              A Focus Network organizou nosso ambiente no Azure e reduziu o que pagávamos sem necessidade. O atendimento deles é diferenciado — sem robôs, sempre humano e ágil.
             </p>
             <div className={styles.author}>
               <img src="/images/avatar_2.png" alt="Fernanda Costa" className={styles.avatar} />
@@ -67,12 +67,12 @@ const TestimonialsSection = () => {
             </div>
             <div className={styles.metricRowWhite}>
               <div className={styles.metricItem}>
-                <div className={styles.metricNumWhite}>ERP</div>
-                <div className={styles.metricLabelWhite}>SAP Business One implantado</div>
+                <div className={styles.metricNumWhite}>Azure</div>
+                <div className={styles.metricLabelWhite}>Ambiente otimizado</div>
               </div>
               <div className={styles.metricItem}>
-                <div className={styles.metricNumWhite}>100%</div>
-                <div className={styles.metricLabelWhite}>Processos integrados</div>
+                <div className={styles.metricNumWhite}>Custos</div>
+                <div className={styles.metricLabelWhite}>Sob controle</div>
               </div>
             </div>
           </div>
@@ -96,7 +96,7 @@ const TestimonialsSection = () => {
           <div className={`${styles.card} ${styles.darkCard}`}>
             <span className={styles.quoteIconWhite}>{'\u201C'}</span>
             <p className={styles.quoteTextWhiteSmall}>
-              A equipe da Focus realmente entende de segurança em TI. Implantaram o firewall UTM e nos ajudaram com a adequação à LGPD. Nossa infraestrutura nunca esteve tão protegida.
+              A equipe da Focus realmente entende de nuvem. Estruturaram nossas aplicações em containers e reforçaram a segurança do ambiente. Nunca estivemos tão protegidos.
             </p>
             <div className={styles.author}>
               <img src="/images/avatar_4.png" alt="Carla Ribeiro" className={styles.avatar} />
