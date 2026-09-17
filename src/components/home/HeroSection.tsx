@@ -5,7 +5,7 @@ import { useEffect, useState } from "react";
 import styles from "./HeroSection.module.css";
 
 const heroImages = [
-  { src: "/images/hero_1.webp", alt: "Nuvens conectadas por uma rede" },
+  { src: "/images/hero_1.webp", alt: "Switch de rede com cabos conectados" },
   { src: "/images/hero_2.webp", alt: "Data center com servidores" },
   { src: "/images/hero_3.webp", alt: "Sala de monitoramento de ambientes cloud" },
 ];
