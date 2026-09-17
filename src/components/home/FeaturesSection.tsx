@@ -22,15 +22,8 @@ export default function FeaturesSection() {
           </h2>
         </header>
 
-        {/* Parte 2: Intro + 2 Cards */}
-        <div className={styles.rowPart2}>
-          {/* Col 1: Texto de Introdução */}
-          <div className={styles.introCol}>
-            <p className={styles.introText}>
-              Azure, AWS e Oracle Cloud. Da migração à arquitetura multi-cloud, com segurança, monitoramento e otimização de custos — do zero até a operação.
-            </p>
-          </div>
-
+        {/* Cards: 4 por fileira, sobra centralizada */}
+        <div className={styles.cardsGrid}>
           {/* Col 2: Cloud Computing */}
           <div className={styles.glassCard}>
             <div className={styles.illustArea}>
@@ -77,10 +70,7 @@ export default function FeaturesSection() {
               Levamos servidores, sistemas e aplicações para a nuvem com planejamento, e seguimos cuidando do ambiente depois da migração.
             </p>
           </div>
-        </div>
 
-        {/* Parte 3: 2 Cards + Empty Col */}
-        <div className={styles.rowPart3}>
           {/* Col 1: AI Business Insights */}
           <div className={styles.glassCard}>
             <div className={styles.illustArea}>
@@ -153,15 +143,6 @@ export default function FeaturesSection() {
               Controle de acessos, proteção de dados e boas práticas de segurança aplicadas a cada ambiente em Azure, AWS e Oracle Cloud.
             </p>
           </div>
-
-          {/* Col 3: Vazia */}
-          <div />
-        </div>
-
-        {/* Parte 4: Outsourcing + Explore */}
-        <div className={styles.rowPart4}>
-          {/* Col 1: Vazia */}
-          <div />
 
           {/* Outsourcing de TI - Agora em 1 coluna (Meio) */}
           <div className={styles.glassCard}>

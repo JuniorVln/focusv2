@@ -1,10 +1,15 @@
 .section {
   padding: 120px 0;
   background: #f8fafc;
+  overflow-x: clip;
 }
 
 .header {
-  margin-bottom: 64px;
+  margin-bottom: 56px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 
 .badge {
@@ -36,62 +41,83 @@
   max-width: 700px;
 }
 
-/* Bento Grid */
-.bentoGrid {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: auto auto;
-  gap: 24px;
+/* Carrossel centralizado */
+.carousel {
+  position: relative;
+  padding: 8px 0 0;
 }
 
-.card {
+.track {
+  display: grid;
+  -webkit-mask-image: linear-gradient(90deg, transparent 0, #000 22%, #000 78%, transparent 100%);
+  mask-image: linear-gradient(90deg, transparent 0, #000 22%, #000 78%, transparent 100%);
+  justify-items: center;
+  align-items: stretch;
+}
+
+.slide {
+  grid-area: 1 / 1;
+  width: min(640px, 100%);
   background: white;
-  border-radius: 20px;
+  border-radius: 24px;
   padding: 40px;
   display: flex;
   flex-direction: column;
-  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
   border: 1px solid #e2e8f0;
+  box-shadow: 0 20px 50px rgba(15, 23, 42, 0.08);
+  transition: transform 0.7s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.7s ease;
+  cursor: pointer;
 }
 
-/* Card Specifics */
-.imageCard {
-  grid-column: 1 / span 1.5;
+.slide[data-pos="0"] { transform: translateX(0) scale(1); opacity: 1; z-index: 3; cursor: default; }
+.slide[data-pos="1"] { transform: translateX(78%) scale(0.84); opacity: 0.55; z-index: 2; }
+.slide[data-pos="-1"] { transform: translateX(-78%) scale(0.84); opacity: 0.55; z-index: 2; }
+.slide[data-pos="2"], .slide[data-pos="-2"] { transform: scale(0.7); opacity: 0; z-index: 1; pointer-events: none; }
+
+.light { background: white; }
+.white { background: #ffffff; }
+.blue { background: linear-gradient(135deg, #054579 0%, #03345c 100%); border: none; }
+.dark { background: #1e293b; border: none; }
+
+.controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 36px;
+}
+
+.arrow {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: 1px solid #e2e8f0;
+  background: white;
+  color: #0f172a;
+  font-size: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+}
+
+.arrow:hover { background: #054579; color: white; border-color: #054579; }
+
+.dots { display: flex; gap: 8px; }
+
+.dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 999px;
+  border: none;
+  background: #cbd5e1;
+  cursor: pointer;
   padding: 0;
-  overflow: hidden;
-  border: none;
+  transition: width 0.3s, background 0.3s;
 }
 
-.fullImage {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.metricCardLight {
-  grid-column: 2 / span 2;
-  justify-content: space-between;
-}
-
-.blueCard {
-  grid-column: 1 / span 1.5;
-  background: linear-gradient(135deg, #054579 0%, #03345c 100%);
-  color: white;
-  border: none;
-}
-
-.simpleCard {
-  grid-column: 2;
-  justify-content: space-between;
-}
-
-.darkCard {
-  grid-column: 3;
-  background: #1e293b;
-  color: white;
-  border: none;
-  justify-content: space-between;
-}
+.dotActive { width: 28px; background: #054579; }
 
 /* Typography Inside Cards */
 .quoteIcon {
@@ -218,27 +244,21 @@
   margin-top: 4px;
 }
 
-/* Responsiveness */
-@media (max-width: 1024px) {
-  .bentoGrid {
-    grid-template-columns: 1fr 1fr;
-  }
-  .imageCard, .metricCardLight, .blueCard {
-    grid-column: span 2;
-  }
-  .simpleCard, .darkCard {
-    grid-column: span 1;
-  }
+.metricItem { min-width: 0; }
+
+@media (max-width: 900px) {
+  .track { -webkit-mask-image: none; mask-image: none; }
+  .slide[data-pos="1"], .slide[data-pos="-1"] { opacity: 0; pointer-events: none; }
 }
 
 @media (max-width: 640px) {
-  .bentoGrid {
-    grid-template-columns: minmax(0, 1fr);
-  }
-  .imageCard, .metricCardLight, .blueCard, .simpleCard, .darkCard {
-    grid-column: auto;
-  }
-  .metricNum, .metricNumWhite {
-    font-size: 36px;
-  }
+  .slide { padding: 28px; }
+  .title { font-size: 34px; }
+  .quoteText, .quoteTextWhite { font-size: 17px; }
+  .metricNum, .metricNumWhite { font-size: 36px; }
+  .metricRow { gap: 24px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .slide { transition: opacity 0.2s; }
 }
