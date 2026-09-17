@@ -1,30 +1,39 @@
 "use client";
 
 import Link from "next/link";
+import { useEffect, useState } from "react";
 import styles from "./HeroSection.module.css";
 
-const avatarColors = ["#054579", "#2a78b5", "#03345c", "#1a6aad"];
-const avatarInitials = ["M", "A", "R", "L"];
-
-const stats = [
-  { value: "Azure", label: "Microsoft Azure" },
-  { value: "AWS", label: "Amazon Web Services" },
-  { value: "Oracle", label: "Oracle Cloud", accent: true },
+const heroImages = [
+  { src: "/images/hero_1.webp", alt: "Nuvens conectadas por uma rede" },
+  { src: "/images/hero_2.webp", alt: "Data center com servidores" },
+  { src: "/images/hero_3.webp", alt: "Sala de monitoramento de ambientes cloud" },
 ];
 
+const INTERVALO = 7000;
+
 export default function HeroSection() {
+  const [ativa, setAtiva] = useState(0);
+
+  useEffect(() => {
+    if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+    const t = setInterval(() => setAtiva((i) => (i + 1) % heroImages.length), INTERVALO);
+    return () => clearInterval(t);
+  }, []);
+
   return (
     <section className={styles.hero}>
-      {/* Video Background */}
-      <video
-        className={styles.videoBg}
-        src="/hero-video.mp4"
-        autoPlay
-        loop
-        muted
-        playsInline
-        preload="auto"
-      />
+      {/* Imagens estáticas em troca suave (sem movimento) */}
+      {heroImages.map((img, i) => (
+        <img
+          key={img.src}
+          src={img.src}
+          alt={i === ativa ? img.alt : ""}
+          aria-hidden={i !== ativa}
+          className={`${styles.bgImage} ${i === ativa ? styles.bgImageActive : ""}`}
+          fetchPriority={i === 0 ? "high" : "low"}
+        />
+      ))}
 
       {/* Overlays */}
       <div className={styles.overlay} />
@@ -34,25 +43,6 @@ export default function HeroSection() {
       <div className={styles.content}>
         {/* Left */}
         <div className={styles.left}>
-          {/* Team avatars */}
-          <div className={styles.teamRow}>
-            <div className={styles.avatars}>
-              {avatarInitials.map((initial, i) => (
-                <div
-                  key={i}
-                  className={styles.avatar}
-                  style={{ background: `linear-gradient(135deg, ${avatarColors[i]}, ${avatarColors[(i + 1) % 4]})` }}
-                >
-                  {initial}
-                </div>
-              ))}
-            </div>
-            <div className={styles.teamMeta}>
-              <span className={styles.teamLabel}>Nossa Equipe</span>
-              <span className={styles.teamSince}>Desde 2017 · Especialistas em Cloud</span>
-            </div>
-          </div>
-
           {/* Headline */}
           <h1 className={styles.headline}>
             Tudo o que sua empresa<br />
@@ -75,23 +65,6 @@ export default function HeroSection() {
           </div>
         </div>
 
-        {/* Right — Stats */}
-        <div className={styles.statsGrid}>
-          {stats.map((stat, i) => (
-            <div
-              key={i}
-              className={`${styles.statCard} ${stat.accent ? styles.accent : ""} ${i === 0 ? styles.firstCard : ""} ${i === 1 ? styles.secondCard : ""} ${i === 2 ? styles.thirdCard : ""}`}
-            >
-              <div className={styles.decor}>
-                <span className={styles.pixel} />
-                <span className={styles.pixel} />
-                <span className={styles.pixel} />
-              </div>
-              <div className={styles.statValue}>{stat.value}</div>
-              <div className={styles.statLabel}>{stat.label}</div>
-            </div>
-          ))}
-        </div>
       </div>
 
       {/* Scroll indicator */}
